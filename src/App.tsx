@@ -11,12 +11,10 @@ const App: React.FC = () => {
     <ThemeProvider theme={theme}>
       <GlobalStyles />
       <AppContainer>
-        <Header branding="Español" />
+        <Header branding="English" />
         <MainContent>
-          <main>
-            <h1>Welcome</h1>
-            <p>Let's learn languages together!</p>
-          </main>
+          <h1>Welcome</h1>
+          <p>Let's learn languages together!</p>
         </MainContent>
         <Footer />
       </AppContainer>
