@@ -1,10 +1,26 @@
 import React from 'react';
+import { ThemeProvider } from "styled-components";
+import { GlobalStyles } from "./styles/globalStyles";
+import { theme } from "./styles/theme";
+import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
+import { AppContainer, MainContent } from './App.styles';
 
-function App() {
+const App: React.FC = () => {
   return (
-    <div>
-      <p>Let's learn languages!</p>
-    </div>
+    <ThemeProvider theme={theme}>
+      <GlobalStyles />
+      <AppContainer>
+        <Header branding="Español" />
+        <MainContent>
+          <main>
+            <h1>Welcome</h1>
+            <p>Let's learn languages together!</p>
+          </main>
+        </MainContent>
+        <Footer />
+      </AppContainer>
+    </ThemeProvider>
   );
 }
 

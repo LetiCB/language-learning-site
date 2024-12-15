@@ -12,9 +12,6 @@
     "jsx": "react-jsx",
     "outDir": "./dist",
     "baseUrl": "./",
-    "paths": {
-      "@components/*": ["src/components/*"]
-    },
     "types": ["jest"]
   },
   "include": ["src"],
