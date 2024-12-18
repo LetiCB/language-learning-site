@@ -12,25 +12,18 @@ describe("Header Component tests", () => {
         cleanup();
     });
 
-    it("renders the default branding if none is provided", () => {
-        const DEFAULT_BRANDING = screen.getByText(/Let's learn English/i);
+    it("should render the default branding", () => {
+        const DEFAULT_BRANDING = screen.getByText(/Aprendamos/i);
         expect(DEFAULT_BRANDING).toBeInTheDocument();
     });
 
-    it("renders the children correctly", () => {
+    it("should render the children correctly", () => {
         const CHILDREN = screen.getByText("Test Children");
         expect(CHILDREN).toBeInTheDocument();
     });
 
-    it("has the role banner for accessibility", () => {
+    it("should have the role banner for accessibility", () => {
         const ROLE = screen.getByRole("banner");
         expect(ROLE).toBeInTheDocument();
-    });
-
-    it("renders the branding text correctly", () => {
-        cleanup();
-        render(<Header branding="Spanish">Test Children</Header>);
-        const BRANDING_TEXT = screen.getByText(/Let's learn Spanish/i);
-        expect(BRANDING_TEXT).toBeInTheDocument();
     });
 });

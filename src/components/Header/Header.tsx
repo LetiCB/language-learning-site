@@ -1,15 +1,33 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import { Branding, HeaderContainer, HeaderIcons } from "./Header.styles";
+import LanguageSelector from "../LanguageSelector/LanguageSelector";
+import { useLanguage } from "src/context/LanguageContext";
 
 interface HeaderProps {
-    branding?: React.ReactNode;
     children?: React.ReactNode;
 }
 
-const Header: React.FC<HeaderProps> = ({branding = "English", children}) => {
+const Header: React.FC<HeaderProps> = ({ children}) => {
+    const navigate = useNavigate();
+    const { selectedLanguage, setSelectedLanguage } = useLanguage();
+
+    const handleLanguageChange = (language: string) => {
+        setSelectedLanguage(language);
+        const languagePath = language.toLowerCase();
+        navigate(`/learn/${languagePath}`);
+      };
+
     return (
         <HeaderContainer role="banner">
-        <Branding>Let's learn {branding}</Branding>
+        <Branding>
+        Aprendamos{" "}
+            <LanguageSelector
+                selectedLanguage={selectedLanguage}
+                languages={["Inglés", "Francés", "Italiano", "Portugués"]}
+                onLanguageChange={handleLanguageChange}
+            />
+        </Branding>
         <HeaderIcons>{children}</HeaderIcons>
       </HeaderContainer> 
     )
