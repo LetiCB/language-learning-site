@@ -53,7 +53,63 @@ export const Input = styled.input`
 
   &:focus {
     outline: none;
-    border-color: #ab1c1c;
-    box-shadow: 0 0 5px rgba(171, 28, 28, 0.5);
+    border-color: #6d4b5f;
+    box-shadow: 0 0 5pxrgb(97, 65, 84);
+  }
+`;
+
+export const Feedback = styled.p<{ correct: boolean}>`
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  color: ${({ correct }) => (correct ? "#4caf50" : "#6d4b5f")};
+`;
+
+export const ActionContainer = styled.div`
+  height: 12rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  hr {
+    width: 40rem;
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 0;
+  }
+`;
+
+export const ActionButtonContainer = styled.div`
+  margin: 2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  font-size: 0.9rem;
+
+  button {
+    padding: 1rem 1.3rem;
+    min-width: 12rem;
+    font-size: 1rem;
+    color: #333333;
+    border-radius: 0.5rem;
+    cursor: pointer;
+  }
+`;
+
+export const VerifyButton = styled.button`
+  border: 2px solid #f7c7c7;
+  background-color: #fbdada;
+  &:hover {
+    border: 2px solid #6d4b5f;
+  }
+`;
+
+export const ResetButton = styled.button`
+  border: 2px solid #fbdada;
+  background-color: #f5f0f0;
+  &:hover {
+    border: 2px solid #6d4b5f;
   }
 `;
