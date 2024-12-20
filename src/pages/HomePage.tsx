@@ -16,7 +16,7 @@ const HomePage: React.FC = () => {
   const handleLanguageSelect = (language: string) => {
     const languagePath = language.toLowerCase();
     setSelectedLanguage(language);
-    navigate(`/learn/${languagePath}`);
+    navigate(`/${languagePath}`);
   };
 
   return (
