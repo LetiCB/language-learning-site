@@ -2,15 +2,22 @@ import React from "react";
 import { Routes, Route } from "react-router-dom";
 import HomePage from "src/pages/HomePage";
 import LearnPage from "src/pages/LearnPage";
+import SongList from "src/pages/SongList";
+import SongPage from "src/pages/SongPage";
 
 const AppRoutes: React.FC = () => {
   return (
     <Routes>
       <Route path="/" element={<HomePage />} />
 
-      <Route path="/learn/:language" element={<LearnPage />} />
+      <Route path="/:language" element={<LearnPage />} />
 
-      {/* <Route path="/learn/:language/:activity" element={<ActivityPage />} /> */}
+      <Route path="/:language/canciones" element={<SongList />} />
+      
+      <Route path="/:language/songs/:cancionesId" element={<SongPage />} />
+
+
+      {/* <Route path="/:language/:activity" element={<ActivityPage />} /> */}
     </Routes>
   );
 };
