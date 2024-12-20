@@ -1,0 +1,183 @@
+[
+  {
+    "id": 1,
+    "language": "inglés",
+    "artist": "The Cure",
+    "title": "Friday I'm In Love",
+    "url": "mGgMZpGYiy8",
+    "lyrics": [
+      {
+        "line": "_____ if Monday's blue",
+        "options": ["I don't care", "I don't know", "I just love"]
+      },
+      {
+        "line": "Tuesday's ______ and Wednesday too",
+        "options": ["gray", "green", "cream"]
+      },
+      {
+        "line": "_______ I don't care about you",
+        "options": ["Thursday", "Tuesday", "Yesterday"]
+      },
+      {
+        "line": "It's Friday _________",
+        "options": ["I'm in love", "I'm loved", "I feel love"]
+      },
+      {
+        "line": "______ you can fall apart",
+        "options": ["Monday", "Money", "Sunday"]
+      },
+      {
+        "line": "Tuesday, Wednesday _________",
+        "options": ["break my heart", "have my heart", "has my heart"]
+      },
+      {
+        "line": "Oh ______ doesn't even start",
+        "options": ["Thursday", "Tuesday", "Yesterday"]
+      },
+      {
+        "line": "It's ______ I'm in love",
+        "options": ["Friday", "finally", "Finland"]
+      },
+      {
+        "line": "_______ wait",
+        "options": ["Saturday", "Suddenly", "Sunday"]
+      },
+      {
+        "line": "And Sunday always comes ________",
+        "options": ["too late", "at eight", "tonight"]
+      },
+      {
+        "line": "But ______ never hesitate",
+        "options": ["Friday", "finally", "fine I"]
+      },
+      {
+        "line": "I don't care if Monday's ______",
+        "options": ["black", "back", "right"]
+      },
+      {
+        "line": "Tuesday, Wednesday, _________",
+        "options": ["heart attack", "heart at hand", "hard and hard"]
+      },
+      {
+        "line": "______ never looking back",
+        "options": ["Thursday", "Tuesday", "Sunday"]
+      },
+      {
+        "line": "_______, I'm in love",
+        "options": ["It's Friday", "It's finally", "It's final day"]
+      },
+      {
+        "line": "Monday you _____ hold your head",
+        "options": ["can", "have", "may"]
+      },
+      {
+        "line": "Tuesday, Wednesday, stay in _____",
+        "options": ["bed", "bay", "chair"]
+      },
+      {
+        "line": "Or Thursday watch ______ instead",
+        "options": ["the walls", "the whales", "the wash"]
+      },
+      {
+        "line": "It's Friday, I'm in _____",
+        "options": ["love", "loss", "lost"]
+      },
+      {
+        "line": "Saturday _______",
+        "options": ["wait", "waits", "win"]
+      },
+      {
+        "line": "And ______ always comes too late",
+        "options": ["Sunday", "sunny", "suddenly"]
+      },
+      {
+        "line": "But Friday _______ hesitate",
+        "options": ["never", "neither", "ever"]
+      },
+      {
+        "line": "Dressed up to _______",
+        "options": ["the eyes", "the days", "the lies"]
+      },
+      {
+        "line": "It's a _______ surprise",
+        "options": ["wonderful", "win and full", "wonder of"]
+      },
+      {
+        "line": "To see your ______ and your spirits rise",
+        "options": ["shoes", "jeans", "toes"]
+      },
+      {
+        "line": "_______ out your frown",
+        "options": ["Throwing", "Showing", "Moving"]
+      },
+      {
+        "line": "And just smiling at the ______",
+        "options": ["sound", "music", "dawn"]
+      },
+      {
+        "line": "And as sleek as a shriek ______ 'round and 'round",
+        "options": ["spinning", "singing", "pinning"]
+      },
+      {
+        "line": "Always take a _______",
+        "options": ["big bite", "bit bait", "big bait"]
+      },
+      {
+        "line": "It's such a ______ sight",
+        "options": ["gorgeous", "great", "bigger"]
+      },
+      {
+        "line": "To see you eat in the middle of _______",
+        "options": ["the night", "the light", "the sight"]
+      },
+      {
+        "line": "You can _____ get enough",
+        "options": ["never", "ever", "not"]
+      },
+      {
+        "line": "Enough of ____ stuff",
+        "options": ["this", "the", "that"]
+      },
+      {
+        "line": "It's _______, I'm in love",
+        "options": ["Friday", "Finland", "finally"]
+      },
+      {
+        "line": "I ______ if Monday's blue",
+        "options": ["don't care", "don't know", "don't mind"]
+      },
+      {
+        "line": "Tuesday's gray and _______ too",
+        "options": ["Wednesday", "Wesley", "great day"]
+      },
+      {
+        "line": "Thursday I don't care about ___",
+        "options": ["you", "june", "blue"]
+      },
+      {
+        "line": "It's Friday, I'm ______",
+        "options": ["in love", "in awe", "in out"]
+      },
+      {
+        "line": "_______ you can fall apart",
+        "options": ["Monday", "My day", "Mandy"]
+      },
+      {
+        "line": "_______, Wednesday, break my heart",
+        "options": ["Tuesday", "You in", "Thursday"]
+      },
+      {
+        "line": "Thursday ______ even start",
+        "options": ["doesn't", "don't", "does not"]
+      },
+      {
+        "line": "______________________",
+        "options": [
+          "It's Friday, I'm in love",
+          "It's finally my day off",
+          "It's Friday, I'm okay"
+        ]
+      }
+    ]
+  }
+]
