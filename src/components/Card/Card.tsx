@@ -3,7 +3,7 @@ import { CardContainer, ImageContainer, Image, CardContent, Subtitle, Title, Des
 
 
 interface CardProps {
-    image: string;
+    image?: string;
     title: string;
     subtitle?: string;
     description?: string;
@@ -14,7 +14,7 @@ const Card: React.FC<CardProps> = ({ image, title, subtitle, description, onClic
   return (
     <CardContainer onClick={onClick}>
       <ImageContainer>
-        <Image src={image} alt={title} />
+      {image &&<Image src={image} alt={title} />}
       </ImageContainer>
       <CardContent>
         <Title>{title}</Title>
