@@ -12,7 +12,17 @@ interface CardProps {
 
 const Card: React.FC<CardProps> = ({ image, title, subtitle, description, onClick }) => {
   return (
-    <CardContainer onClick={onClick}>
+    <CardContainer
+      role="button"
+      tabIndex={0}
+      onClick={onClick}
+      onKeyDown={(e) => {
+        if (e.key === "Enter" || e.key === " ") {
+          e.preventDefault();
+          onClick?.();
+        }
+      }}
+    >
       <ImageContainer>
       {image &&<Image src={image} alt={title} />}
       </ImageContainer>
