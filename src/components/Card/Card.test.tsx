@@ -31,47 +31,47 @@ describe("Card Component tests", () => {
   });
 
   it("should render the title", () => {
-    const TITLE = screen.getByText(defaultProps.title);
-    expect(TITLE).toBeInTheDocument();
+    const title = screen.getByText(defaultProps.title);
+    expect(title).toBeInTheDocument();
   });
 
   it("should render the subtitle when provided", () => {
-    const SUBTITLE = screen.getByText(defaultProps.subtitle);
-    expect(SUBTITLE).toBeInTheDocument();
+    const subtitle = screen.getByText(defaultProps.subtitle);
+    expect(subtitle).toBeInTheDocument();
   });
 
   it("should render the description when provided", () => {
-    const DESCRIPTION = screen.getByText(defaultProps.description);
-    expect(DESCRIPTION).toBeInTheDocument();
+    const description = screen.getByText(defaultProps.description);
+    expect(description).toBeInTheDocument();
   });
 
   it("should render the image when provided", () => {
-    const IMAGE = screen.getByAltText(defaultProps.title);
-    expect(IMAGE).toBeInTheDocument();
-    expect(IMAGE).toHaveAttribute("src", defaultProps.image);
+    const image = screen.getByAltText(defaultProps.title);
+    expect(image).toBeInTheDocument();
+    expect(image).toHaveAttribute("src", defaultProps.image);
   });
 
   it("should call onClick when the card is clicked", () => {
-    const CARD = screen.getByRole("button");
-    fireEvent.click(CARD);
+    const card = screen.getByRole("button");
+    fireEvent.click(card);
     expect(mockOnClick).toHaveBeenCalledTimes(1);
   });
 
   it("should have accessible elements", () => {
-    const TITLE = screen.getByText(defaultProps.title);
-    expect(TITLE).toHaveAccessibleName();
+    const title = screen.getByText(defaultProps.title);
+    expect(title).toHaveAccessibleName();
   });
 
   it("should be accessible with keyboard interactions", () => {
-    const CARD = screen.getByRole("button");
+    const card = screen.getByRole("button");
 
-    CARD.focus();
-    expect(CARD).toHaveFocus();
+    card.focus();
+    expect(card).toHaveFocus();
 
-    fireEvent.keyDown(CARD, { key: "Enter" });
+    fireEvent.keyDown(card, { key: "Enter" });
     expect(mockOnClick).toHaveBeenCalledTimes(1);
 
-    fireEvent.keyDown(CARD, { key: " " });
+    fireEvent.keyDown(card, { key: " " });
     expect(mockOnClick).toHaveBeenCalledTimes(2);
   });
 });
@@ -90,28 +90,28 @@ describe("Card Component tests with missing props", () => {
     });
 
     it("should render the title", () => {
-        const TITLE = screen.getByText(defaultProps.title);
-        expect(TITLE).toBeInTheDocument();
+        const title = screen.getByText(defaultProps.title);
+        expect(title).toBeInTheDocument();
     });
   
     it("should render the component without the subtitle if not provided", () => {
-      const SUBTITLE = screen.queryByText(defaultProps.subtitle);
-      expect(SUBTITLE).not.toBeInTheDocument();
+      const subtitle = screen.queryByText(defaultProps.subtitle);
+      expect(subtitle).not.toBeInTheDocument();
     });
   
     it("should render the component without the description if not provided", () => {
-      const DESCRIPTION = screen.queryByText(defaultProps.description);
-      expect(DESCRIPTION).not.toBeInTheDocument();
+      const description = screen.queryByText(defaultProps.description);
+      expect(description).not.toBeInTheDocument();
     });
   
     it("should render the component without the image if not provided", () => {
-      const IMAGE = screen.queryByAltText(defaultProps.title);
-      expect(IMAGE).not.toBeInTheDocument();
+      const image = screen.queryByAltText(defaultProps.title);
+      expect(image).not.toBeInTheDocument();
     });
   
-    it("calls onClick when the card is clicked", () => {
-      const CARD = screen.getByRole("button");
-      fireEvent.click(CARD);
+    it("should call onClick when the card is clicked", () => {
+      const card = screen.getByRole("button");
+      fireEvent.click(card);
       expect(mockOnClick).not.toHaveBeenCalled();
     });
   });
