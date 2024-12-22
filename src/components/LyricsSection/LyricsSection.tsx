@@ -139,7 +139,7 @@ const LyricsSection: React.FC<LyricsSectionProps> = ({ song, difficulty }) => {
           {difficulty === "hard" && (
             <Input
               type="text"
-              placeholder="Complete the line"
+              placeholder="Completá"
               value={selectedOptions[lineIndex] || ""}
               onChange={(e) => handleInputChange(lineIndex, e)}
             />
@@ -162,7 +162,7 @@ const LyricsSection: React.FC<LyricsSectionProps> = ({ song, difficulty }) => {
           {difficulty === "intermediate" && interactionTypes[lineIndex] === "input" && (
             <Input
               type="text"
-              placeholder="Complete the line"
+              placeholder="Completá"
               value={selectedOptions[lineIndex] || ""}
               onChange={(e) => handleInputChange(lineIndex, e)}
             />
