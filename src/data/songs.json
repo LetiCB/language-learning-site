@@ -179,5 +179,595 @@
         ]
       }
     ]
+  },
+  {
+    "id": 2,
+    "language": "francés",
+    "artist": "Sofia Essaïdi",
+    "title": "J'croque la vie",
+    "url": "DIQcaJ0Gqnw",
+    "image": "sofia-essaïdi-je-croque-la-vie.png",
+    "lyrics": [
+      {
+        "line": "Elle tourne la tête, elle tourne _______",
+        "options": ["la tête", "la fête", "la bête"]
+      },
+      {
+        "line": "Ça tourne la tête tout ______",
+        "options": ["le temps", "le chant", "le vent"]
+      },
+      {
+        "line": "Je me trompe de tête, je me ________",
+        "options": ["casse la tête", "passe la tête", "lasse la tête"]
+      },
+      {
+        "line": "Je _______ tout le temps",
+        "options": ["fais la fête", "fais la tête", "vais en quête"]
+      },
+      {
+        "line": "_______ comme le temps est long",
+        "options": ["C'est fou", "C'est doux", "C'est tout"]
+      },
+      {
+        "line": "Quand ta peau est ______",
+        "options": ["loin", "brun", "bien"]
+      },
+      {
+        "line": "Mais ______ pour de bon",
+        "options": ["je décide", "je dérive", "je précise"]
+      },
+      {
+        "line": "De suivre _______",
+        "options": ["mon chemin", "le matin", "son destin"]
+      },
+      {
+        "line": "Je croque ______, même quand je dors",
+        "options": ["la vie", "l'envie", "l'oubli"]
+      },
+      {
+        "line": "J'en redemande ______ et encore",
+        "options": ["toujours", "un jour", "amour"]
+      },
+      {
+        "line": "C'est ______ trop, trop, souvent pas assez",
+        "options": ["jamais", "souvent", "vraiment"]
+      },
+      {
+        "line": "Je croque la vie, ______ je mords",
+        "options": ["parfois", "tout bas", "comme ça"]
+      },
+      {
+        "line": "J'en redemande toujours _______",
+        "options": ["et encore", "et dehors", "et d'abord"]
+      },
+      {
+        "line": "J'en perds pas une miette, ça _____ de l'or",
+        "options": ["vaut", "prend", "rend"]
+      },
+      {
+        "line": "Je me prends la tête, je ______ de tête",
+        "options": ["change", "range", "mange"]
+      },
+      {
+        "line": "Je ______ la tête tout le temps",
+        "options": ["perds", "sers", "laisse"]
+      },
+      {
+        "line": "Je suis _______, c'est ce que je répète",
+        "options": ["jamais prête", "toujours bête", "très honnête"]
+      },
+      {
+        "line": "_______ de temps",
+        "options": ["À longueur", "En valeur", "Avec cœur"]
+      },
+      {
+        "line": "Mais si ça ne tourne pas _____",
+        "options": ["rond", "long", "bon"]
+      },
+      {
+        "line": "Tu n'y es pas ______",
+        "options": ["pour rien", "pour bien", "pour plein"]
+      },
+      {
+        "line": "Et je décide ________",
+        "options": ["pour de bon", "à l'unisson", "avec raison"]
+      },
+      {
+        "line": "De ______ mon chemin",
+        "options": ["suivre", "vivre", "prendre"]
+      },
+      {
+        "line": "Je croque la vie, ______ quand je dors",
+        "options": ["même", "parfois", "souvent"]
+      },
+      {
+        "line": "__________ toujours et encore",
+        "options": ["J'en redemande", "Tu me réclames", "On le demande"]
+      },
+      {
+        "line": "C'est ______ trop, trop, souvent pas assez",
+        "options": ["jamais", "toujours", "parfois"]
+      },
+      {
+        "line": "_________, parfois je mords",
+        "options": ["Je croque la vie", "Je touche l'envie", "Je perds le défi"]
+      },
+      {
+        "line": "J'en redemande ________ et encore",
+        "options": ["toujours", "un jour", "jamais"]
+      },
+      {
+        "line": "J'en perds pas ________, ça vaut de l'or",
+        "options": ["une miette", "la fête", "une dette"]
+      },
+      {
+        "line": "Je mène, mais ______ qu'on en dise",
+        "options": ["quoi", "toi", "moi"]
+      },
+      {
+        "line": "J'ai toujours _______ du mâle",
+        "options": ["le mal", "l'éclat", "le bal"]
+      },
+      {
+        "line": "Et _______, j'ai mal de n'être plus qu'un",
+        "options": ["ça fait mal", "ça s'étale", "ça détale"]
+      },
+      {
+        "line": "Je me relève, je _________",
+        "options": ["double la mise", "trouve la brise", "lâche la prise"]
+      },
+      {
+        "line": "Plus jamais de mal jusqu'à __________ entre nous",
+        "options": ["un point final", "un signal", "un idéal"]
+      },
+      {
+        "line": "________ de mal jusqu'à un point final entre nous",
+        "options": ["Plus jamais", "Trop souvent", "Si jamais"]
+      },
+      {
+        "line": "Je croque la vie, _______ quand je dors",
+        "options": ["même", "souvent", "parfois"]
+      },
+      {
+        "line": "J'en redemande toujours et _______",
+        "options": ["encore", "d'abord", "alors"]
+      },
+      {
+        "line": "C'est jamais _________, souvent pas assez",
+        "options": ["trop, trop", "bon, bon", "fou, fou"]
+      },
+      {
+        "line": "__________, même quand je dors",
+        "options": ["Je croque la vie", "Je touche l'envie", "Je perds l'esprit"]
+      },
+      {
+        "line": "J'en redemande ________ et encore",
+        "options": ["toujours", "parfois", "souvent"]
+      },
+      {
+        "line": "C'est jamais trop, trop, souvent _______",
+        "options": ["pas assez", "tout passé", "mal placé"]
+      },
+      {
+        "line": "Je croque la vie, parfois ________",
+        "options": ["je mords", "je dors", "je cours"]
+      },
+      {
+        "line": "J'en _________ toujours et encore",
+        "options": ["redemande", "reprends", "retiens"]
+      },
+      {
+        "line": "J'en perds pas ________, ça vaut de l'or",
+        "options": ["une miette", "une dette", "une quête"]
+      },
+      {
+        "line": "Même ______ je dors, toujours et encore",
+        "options": ["quand", "tant", "là"]
+      },
+      {
+        "line": "Toujours et _______",
+        "options": ["encore", "d'abord", "jamais"]
+      },
+      {
+        "line": "_______ je mords, j’en veux encore",
+        "options": ["Même si", "Même là", "Même où"]
+      },
+      {
+        "line": "_____________________",
+        "options": ["Toujours et encore", "Souvent et d'abord", "Jamais au dehors"]
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "language": "francés",
+    "artist": "Joyce Jonathan",
+    "title": "Les p'tites jolies choses",
+    "url": "vEownqYD9Mk",
+    "image": "joyce-jonathan-les-petites-jolies-choses.png",
+    "lyrics": [
+      {
+        "line": "Les p'tites jolies ______",
+        "options": ["choses", "roses", "pauses"]
+      },
+      {
+        "line": "Ça met dans le gris juste _______ de rose",
+        "options": ["une touche", "une louche", "une couche"]
+      },
+      {
+        "line": "Ça change pas _______ ni la couleur d'la mer",
+        "options": ["la vie", "l'envie", "le cri"]
+      },
+      {
+        "line": "Ces rayons d'soleil en _______",
+        "options": ["plein hiver", "petit éclair", "grand revers"]
+      },
+      {
+        "line": "Les p'tites ______ choses",
+        "options": ["jolies", "douces", "grises"]
+      },
+      {
+        "line": "______ on n'les voit plus, c'est la vie en prose",
+        "options": ["Parfois", "Souvent", "Là-bas"]
+      },
+      {
+        "line": "______ d'poésie qui nous sourit",
+        "options": ["Un peu", "Beaucoup", "Jamais"]
+      },
+      {
+        "line": "Quand on refait l'monde avec ______",
+        "options": ["un ami", "un abri", "un défi"]
+      },
+      {
+        "line": "Pour toi ______",
+        "options": ["et moi", "et toi", "chez moi"]
+      },
+      {
+        "line": "Si c'est tout c'qui nous ______",
+        "options": ["reste", "plaît", "manque"]
+      },
+      {
+        "line": "Pour _______ du geste",
+        "options": ["la beauté", "la clarté", "la fierté"]
+      },
+      {
+        "line": "Comme quand _______ le col de ma veste",
+        "options": ["tu remontes", "tu décroches", "tu fermes"]
+      },
+      {
+        "line": "Fais-le _______ et moi",
+        "options": ["pour toi", "sans moi", "avec joie"]
+      },
+      {
+        "line": "Montre-moi si tu _______",
+        "options": ["l'oses", "proposes", "déposes"]
+      },
+      {
+        "line": "Si c'est pour la _______",
+        "options": ["bonne cause", "juste pause", "jolie prose"]
+      },
+      {
+        "line": "Au fond de ______, c'est comme un bouquet de fleur",
+        "options": ["ton cœur", "ton heure", "ton air"]
+      },
+      {
+        "line": "Ces p'tites ______ choses",
+        "options": ["jolies", "belles", "grandes"]
+      },
+      {
+        "line": "Ces p'tites __________",
+        "options": ["jolies choses", "douces roses", "grandes pauses"]
+      },
+      {
+        "line": "___ p'tites jolies choses",
+        "options": ["Les", "Des", "Mes"]
+      },
+      {
+        "line": "Ça sent le café au _______",
+        "options": ["petit matin", "grand jardin", "doux refrain"]
+      },
+      {
+        "line": "Et le pain grillé, ces ______ qu'on n'voit pas",
+        "options": ["bonheurs", "saveurs", "douceurs"]
+      },
+      {
+        "line": "Mais qui nous _______ s'ils n'étaient pas là",
+        "options": ["manqueraient", "oublieraient", "quitteraient"]
+      },
+      {
+        "line": "Les p'tites __________",
+        "options": ["jolies choses", "douces pauses", "grandes roses"]
+      },
+      {
+        "line": "_______ que la somme de quelques détails",
+        "options": ["C'est rien", "C'est peu", "C'est tout"]
+      },
+      {
+        "line": "_______ qu'on siffle, un air qu'on adore",
+        "options": ["Une chanson", "Un refrain", "Un poème"]
+      },
+      {
+        "line": "Un _______ juste quand on s'endort",
+        "options": ["joli souvenir", "petit sourire", "beau désir"]
+      },
+      {
+        "line": "Pour ________",
+        "options": ["toi et moi", "lui et toi", "elle et moi"]
+      },
+      {
+        "line": "Si ______ c'qui nous reste",
+        "options": ["c'est tout", "c'est rien", "c'est beau"]
+      },
+      {
+        "line": "Pour la beauté ______",
+        "options": ["du geste", "de l'instant", "de l'éclair"]
+      },
+      {
+        "line": "Comme quand tu remontes le col de _______",
+        "options": ["ma veste", "mon manteau", "mon pull"]
+      },
+      {
+        "line": "Fais-le pour _______",
+        "options": ["toi et moi", "nous deux", "notre cœur"]
+      },
+      {
+        "line": "_______ si tu l'oses",
+        "options": ["Montre-moi", "Fais-le", "Avoue-le"]
+      },
+      {
+        "line": "Si c'est pour la _______",
+        "options": ["bonne cause", "juste pause", "grande prose"]
+      },
+      {
+        "line": "Au fond de ton cœur, c'est comme un _______",
+        "options": ["bouquet de fleur", "éclat de lumière", "parfum de bonheur"]
+      },
+      {
+        "line": "Ces p'tites __________",
+        "options": ["jolies choses", "douces heures", "belles roses"]
+      },
+      {
+        "line": "______ jolies choses",
+        "options": ["Ces p'tites", "Les belles", "Des douces"]
+      },
+      {
+        "line": "Ces ______ choses",
+        "options": ["p'tites jolies", "petites douces", "grandes belles"]
+      },
+      {
+        "line": "Y aura toujours de grands ________",
+        "options": ["malheurs", "désastres", "chagrins"]
+      },
+      {
+        "line": "C'est pas les médailles, c'est pas ________",
+        "options": ["les honneurs", "les trophées", "les succès"]
+      },
+      {
+        "line": "Même s'il y a de ________ qui s'imposent",
+        "options": ["grands combats", "petites luttes", "longues batailles"]
+      },
+      {
+        "line": "Qu'on n'oublie pas de _________",
+        "options": ["faire une pause", "prendre un moment", "faire une récréation"]
+      },
+      {
+        "line": "______ p'tites jolies choses",
+        "options": ["Pour ces", "Avec des", "Par des"]
+      },
+      {
+        "line": "Ces p'tites __________",
+        "options": ["jolies choses", "douces raisons", "belles illusions"]
+      },
+      {
+        "line": "___________________",
+        "options": ["Ces p'tites jolies choses", "Les petites merveilles", "Les petites douceurs"]
+      },
+      {
+        "line": "Pour toi ______",
+        "options": ["et moi", "et lui", "et elle"]
+      },
+      {
+        "line": "Si c'est tout c'qui nous ______",
+        "options": ["reste", "manque", "attend"]
+      },
+      {
+        "line": "Pour la beauté ______",
+        "options": ["du geste", "de l'instant", "de l'amour"]
+      },
+      {
+        "line": "Comme quand tu remontes ______ de ma veste",
+        "options": ["le col", "la manche", "le bouton"]
+      },
+      {
+        "line": "_____ pour toi et moi",
+        "options": ["Fais-le", "Chante-le", "Souris"]
+      },
+      {
+        "line": "Montre-moi si ______",
+        "options": ["tu l'oses", "tu oses", "tu le fais"]
+      },
+      {
+        "line": "Si c'est pour ________",
+        "options": ["la bonne cause", "la beauté", "l'amour"]
+      },
+      {
+        "line": "________, c'est comme un bouquet de fleur",
+        "options": ["Au fond de ton cœur", "Dans ton regard", "Dans tes bras"]
+      },
+      {
+        "line": "Ces p'tites __________",
+        "options": ["jolies choses", "belles heures", "petites douceurs"]
+      },
+      {
+        "line": "Ces p'tites __________",
+        "options": ["jolies choses", "grandes pensées", "petits rêves"]
+      },
+      {
+        "line": "_________ jolies choses",
+        "options": ["Ces p'tites", "Les douces", "Les tendres"]
+      },
+      {
+        "line": "_________ jolies choses",
+        "options": ["Les p'tites", "Les belles", "Les grandes"]
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "language": "francés",
+    "artist": "Zaho de Sagazan",
+    "title": "La symphonie des éclairs",
+    "url": "pqo59FkF_5g",
+    "image": "zaho-la-symphonie-des-éclairs.png",
+    "lyrics": [
+      {
+        "line": "Il fait toujours beau au-dessus ________",
+        "options": ["des nuages", "des étoiles", "du ciel"]
+      },
+      {
+        "line": "Mais moi, si j'étais _______, j'irais danser sous l'orage",
+        "options": ["un oiseau", "un éclair", "un nuage"]
+      },
+      {
+        "line": "Je traverserais les nuages comme le fait ______",
+        "options": ["la lumière", "le vent", "l'orage"]
+      },
+      {
+        "line": "J'écouterais sous ______ la symphonie des éclairs",
+        "options": ["la pluie", "les étoiles", "le tonnerre"]
+      },
+      {
+        "line": "Dès sa plus tendre ______",
+        "options": ["enfance", "jeunesse", "naissance"]
+      },
+      {
+        "line": "Elle ne savait pas parler ________",
+        "options": ["autrement", "plus fort", "doucement"]
+      },
+      {
+        "line": "Qu'en criant tout bas, pas faute _______",
+        "options": ["d'essayer", "de vouloir", "de crier"]
+      },
+      {
+        "line": "De les retenir, ces cris et _______",
+        "options": ["ces larmes", "ces peines", "ces pensées"]
+      },
+      {
+        "line": "____ les faisaient tant-",
+        "options": ["Qui", "Cela", "Ceux"]
+      },
+      {
+        "line": "Il fait _____ beau au-dessus des nuages",
+        "options": ["toujours", "encore", "vraiment"]
+      },
+      {
+        "line": "Mais moi, si j'étais un oiseau, j'irais danser _______",
+        "options": ["sous l'orage", "dans les éclairs", "avec la pluie"]
+      },
+      {
+        "line": "Je ________ les nuages comme le fait la lumière",
+        "options": ["traverserais", "éclairerais", "survolerais"]
+      },
+      {
+        "line": "J'écouterais sous la pluie la ___________",
+        "options": ["symphonie des éclairs", "musique du tonnerre", "mélodie des vents"]
+      },
+      {
+        "line": "En grandissant, rien ne s'est ______",
+        "options": ["calmé", "arrêté", "adouci"]
+      },
+      {
+        "line": "Petite ______ s'est trouvé",
+        "options": ["tempête", "brise", "flamme"]
+      },
+      {
+        "line": "Des ______ de pleuvoir autant",
+        "options": ["raisons", "causes", "plaisirs"]
+      },
+      {
+        "line": "Qui pourrait l'aimer, _________?",
+        "options": ["franchement", "vraiment", "honnêtement"]
+      },
+      {
+        "line": "_______ n'aimerait se retrouver",
+        "options": ["Personne", "Tout le monde", "Quelqu'un"]
+      },
+      {
+        "line": "_______ d'une tempête, avouez",
+        "options": ["Au cœur", "Au bord", "Au sommet"]
+      },
+      {
+        "line": "Il y a des raisons de ______",
+        "options": ["pleurer", "rêver", "hurler"]
+      },
+      {
+        "line": "Elle a ses _____, mais",
+        "options": ["raisons", "peines", "doutes"]
+      },
+      {
+        "line": "______ toujours beau au-dessus des nuages",
+        "options": ["Il fait", "C'est", "Il est"]
+      },
+      {
+        "line": "Mais moi, si j'étais un oiseau, j'irais ______ sous l'orage",
+        "options": ["danser", "voler", "chanter"]
+      },
+      {
+        "line": "Je traverserais les nuages ________ la lumière",
+        "options": ["comme le fait", "pour trouver", "avec"]
+      },
+      {
+        "line": "_______ sous la pluie la symphonie des éclairs",
+        "options": ["J'écouterais", "Je danserais", "Je pleurerais"]
+      },
+      {
+        "line": "_______ la tempête a su",
+        "options": ["Quand", "Comme", "Si"]
+      },
+      {
+        "line": "Que ________ pouvaient s'échapper du vent",
+        "options": ["des mélodies", "des notes", "des murmures"]
+      },
+      {
+        "line": "Et se retrouver dans le ________",
+        "options": ["cœur des gens", "souffle du vent", "reflet des cieux"]
+      },
+      {
+        "line": "______ s'est dit",
+        "options": ["Celle-ci", "L'oiseau", "Le nuage"]
+      },
+      {
+        "line": "Nulle raison d'envier ________",
+        "options": ["le soleil", "l'éclair", "la lumière"]
+      },
+      {
+        "line": "Je ferai danser les gens _______ de mes pleurs",
+        "options": ["au rythme", "au gré", "avec la force"]
+      },
+      {
+        "line": "_______ de mes chants viendra réchauffer les cœurs",
+        "options": ["La tourmente", "L'éclair", "Le souffle"]
+      },
+      {
+        "line": "Réchauffer ______",
+        "options": ["mon cœur", "les âmes", "les gens"]
+      },
+      {
+        "line": "Il fait toujours beau au-dessus ________",
+        "options": ["des nuages", "du ciel", "des étoiles"]
+      },
+      {
+        "line": "Mais moi, je suis de ces oiseaux qui nous _______ sous l'orage",
+        "options": ["font danser", "chantent", "portent"]
+      },
+      {
+        "line": "Je traverserais tous les nuages _______ la lumière",
+        "options": ["pour trouver", "en suivant", "à travers"]
+      },
+      {
+        "line": "En chantant _______ la symphonie des éclairs",
+        "options": ["sous la pluie", "avec passion", "pour les étoiles"]
+      }
+    ]
   }
 ]
