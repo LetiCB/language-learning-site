@@ -49,6 +49,7 @@ describe("Card Component tests", () => {
     const image = screen.getByAltText(defaultProps.title);
     expect(image).toBeInTheDocument();
     expect(image).toHaveAttribute("src", defaultProps.image);
+    expect(image).toHaveStyle("border-radius: 0.25rem;");
   });
 
   it("should call onClick when the card is clicked", () => {
@@ -116,3 +117,25 @@ describe("Card Component tests with missing props", () => {
     });
   });
   
+  describe("Card Component tests with round image", () => {
+    beforeEach(() => {
+      render(
+        <Card
+          image={defaultProps.image}
+          title={defaultProps.title}
+          variant="round"
+        />
+      );
+    });
+  
+    afterEach(() => {
+      cleanup();
+    });
+
+    it("should render the image when provided", () => {
+      const image = screen.getByAltText(defaultProps.title);
+      expect(image).toBeInTheDocument();
+      expect(image).toHaveAttribute("src", defaultProps.image);
+      expect(image).toHaveStyle("border-radius: 50%");
+    });
+  }); 

@@ -1,5 +1,5 @@
 import React from "react";
-import { CardContainer, ImageContainer, Image, CardContent, Subtitle, Title, Description } from "./Card.styles";
+import { CardContainer, ImageContainer, CardContent, Subtitle, Title, Description, RoundImage, RectangularImage } from "./Card.styles";
 
 
 interface CardProps {
@@ -8,9 +8,11 @@ interface CardProps {
     subtitle?: string;
     description?: string;
     onClick?: () => void;
+    variant?: "round";
+    children?: React.ReactNode;
 }
 
-const Card: React.FC<CardProps> = ({ image, title, subtitle, description, onClick }) => {
+const Card: React.FC<CardProps> = ({ image, title, subtitle, description, onClick, variant, children }) => {
   return (
     <CardContainer
       role="button"
@@ -24,12 +26,17 @@ const Card: React.FC<CardProps> = ({ image, title, subtitle, description, onClic
       }}
     >
       <ImageContainer>
-      {image &&<Image src={image} alt={title} />}
+        {image && (
+          variant === "round" 
+          ? <RoundImage src={image} alt={title} /> 
+          : <RectangularImage src={image} alt={title} />
+        )}
       </ImageContainer>
       <CardContent>
         <Title>{title}</Title>
         {subtitle && <Subtitle>{subtitle}</Subtitle>}
         {description && <Description>{description}</Description>}
+        {children && <div>{children}</div>}
       </CardContent>
     </CardContainer>
   );
