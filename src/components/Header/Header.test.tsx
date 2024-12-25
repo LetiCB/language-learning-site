@@ -13,17 +13,17 @@ describe("Header Component tests", () => {
     });
 
     it("should render the default branding", () => {
-        const DEFAULT_BRANDING = screen.getByText(/Aprendamos/i);
-        expect(DEFAULT_BRANDING).toBeInTheDocument();
+        const defaultBranding = screen.getByText(/Aprendamos/i);
+        expect(defaultBranding).toBeInTheDocument();
     });
 
     it("should render the children correctly", () => {
-        const CHILDREN = screen.getByText("Test Children");
-        expect(CHILDREN).toBeInTheDocument();
+        const children = screen.getByText("Test Children");
+        expect(children).toBeInTheDocument();
     });
 
     it("should have the role banner for accessibility", () => {
-        const ROLE = screen.getByRole("banner");
-        expect(ROLE).toBeInTheDocument();
+        const role = screen.getByRole("banner");
+        expect(role).toBeInTheDocument();
     });
 });

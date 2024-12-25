@@ -3,7 +3,7 @@ import React from "react";
 import { render, screen, cleanup } from "@testing-library/react";
 import Footer from "./Footer";
 
-describe("Footer Component", () => {
+describe("Footer Component tests", () => {
     beforeEach(() => {
         render(<Footer />);
     });
@@ -12,21 +12,21 @@ describe("Footer Component", () => {
         cleanup();
     });
 
-    it("renders the copyright text with the current year", () => {
-        const CURRENT_YEAR = new Date().getFullYear();
-        const COPYRIGHT_TEXT = screen.getByText(`© ${CURRENT_YEAR} Aprende idiomas. Todos los derechos reservados.`);
-        expect(COPYRIGHT_TEXT).toBeInTheDocument();
+    it("should render the copyright text with the current year", () => {
+        const currentYear = new Date().getFullYear();
+        const copyrightText = screen.getByText(`© ${currentYear} Aprende idiomas. Todos los derechos reservados.`);
+        expect(copyrightText).toBeInTheDocument();
     });
 
-    it("has the role contentinfo for accessibility", () => {
-        const ROLE = screen.getByRole("contentinfo");
-        expect(ROLE).toBeInTheDocument();
+    it("should have the role contentinfo for accessibility", () => {
+        const role = screen.getByRole("contentinfo");
+        expect(role).toBeInTheDocument();
     });
 
-    it("renders the children correctly", () => {
+    it("should render the children correctly", () => {
         cleanup();
         render(<Footer>Test Children</Footer>);
-        const CHILDREN = screen.getByText("Test Children");
-        expect(CHILDREN).toBeInTheDocument();
+        const children = screen.getByText("Test Children");
+        expect(children).toBeInTheDocument();
     });
 });

@@ -1,10 +1,11 @@
 import styled from "styled-components";
 
 export const CardContainer = styled.div`
+  max-width: 25rem;
   background-color: #ffffff;
-  border-radius: 8px;
+  border-radius: 0.5rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  padding: 20px;
+  padding: 1.25rem;
   text-align: center;
   cursor: pointer;
   transition: transform 0.2s, box-shadow 0.2s;
@@ -18,13 +19,20 @@ export const CardContainer = styled.div`
 export const ImageContainer = styled.div`
   display: flex;
   justify-content: center;
-  margin-bottom: 15px;
+  margin-bottom: 0.93rem;
 `;
 
-export const Image = styled.img`
-  width: 80px;
-  height: 80px;
+export const RoundImage = styled.img`
+  width: 5rem;
+  height: 5rem;
   border-radius: 50%;
+  object-fit: cover;
+`;
+
+export const RectangularImage = styled.img`
+  width: 8.5rem;
+  height: 6rem;
+  border-radius: 0.25rem;
   object-fit: cover;
 `;
 

@@ -16,7 +16,7 @@ const HomePage: React.FC = () => {
   const handleLanguageSelect = (language: string) => {
     const languagePath = language.toLowerCase();
     setSelectedLanguage(language);
-    navigate(`/learn/${languagePath}`);
+    navigate(`/${languagePath}`);
   };
 
   return (
@@ -31,6 +31,7 @@ const HomePage: React.FC = () => {
           subtitle={language.subtitle}
           description={language.description}
           onClick={() => handleLanguageSelect(language.title)}
+          variant="round"
         />
       ))}
       </LanguageGrid>
