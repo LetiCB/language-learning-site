@@ -6,8 +6,8 @@ import { DifficultyContainer, LyricsContainer, OptionsContainer, SongPageContain
 import FloatingVideo from 'src/components/FloatingVideo/FloatingVideo';
 
 const SongPage = () => {
-    const { cancionesId } = useParams();
-    const song = songs.find(song => song.id === Number(cancionesId));
+    const { cancionesTitle } = useParams();
+    const song = songs.find(song => song.title === cancionesTitle);
     const [difficulty, setDifficulty] = useState('easy');
   
     if (!song) return <p>Ups... no encontramos la canción</p>;   

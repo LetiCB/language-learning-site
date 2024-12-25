@@ -31,6 +31,7 @@ const HomePage: React.FC = () => {
           subtitle={language.subtitle}
           description={language.description}
           onClick={() => handleLanguageSelect(language.title)}
+          variant="round"
         />
       ))}
       </LanguageGrid>

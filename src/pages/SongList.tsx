@@ -1,6 +1,7 @@
 import { useNavigate, useParams } from 'react-router-dom';
 import songs from '../data/songs.json';
 import Card from 'src/components/Card/Card';
+import { SongListContainer, SongListGrid } from './SongList.styles';
 
 const SongList = () => {
   const navigate = useNavigate();
@@ -8,19 +9,20 @@ const SongList = () => {
   const filteredSongs = songs.filter(song => song.language.toLowerCase() === language?.toLowerCase());
 
   return (
-    <div>
-      <h1>{language} Songs</h1>
-      <div className="card-container">
+    <SongListContainer>
+      <h1>Canciones en {language}</h1>
+      <SongListGrid>
         {filteredSongs.map(song => (
           <Card
             key={song.id}
             title={song.title}
             description={song.artist}
-            onClick={() => navigate(`/${language}/songs/${song.id}`)}
+            onClick={() => navigate(`/${language}/canciones/${song.title}`)}
+            image={song.image ? `/images/${song.image}` : '/images/no-image.png'}
           />
         ))}
-      </div>
-    </div>
+      </SongListGrid>
+    </SongListContainer>
   );
 };
 

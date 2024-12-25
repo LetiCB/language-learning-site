@@ -14,10 +14,8 @@ const AppRoutes: React.FC = () => {
 
       <Route path="/:language/canciones" element={<SongList />} />
       
-      <Route path="/:language/songs/:cancionesId" element={<SongPage />} />
+      <Route path="/:language/canciones/:cancionesTitle" element={<SongPage />} />
 
-
-      {/* <Route path="/:language/:activity" element={<ActivityPage />} /> */}
     </Routes>
   );
 };

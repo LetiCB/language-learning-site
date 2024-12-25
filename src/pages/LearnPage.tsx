@@ -17,6 +17,7 @@ const LearnPage: React.FC = () => {
           image={Songs}
           title="Cantemos canciones"
           onClick={() => navigate(`/${language}/canciones`)}
+          variant="round"
         />
       </LearnPageGrid>
     </LearnPageContainer>
