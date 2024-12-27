@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import DraggableItem from "../DraggableItem/DraggableItem";
 import DropZone from "../DropZone/DropZone";
 import { BoardContainer, CategoriesContainer, ItemsContainer } from "./DragAndDropBoard.styled";
+import AlertMessage from "../Alert/AlertMessage";
 
 type Item = {
   id: string;
@@ -30,18 +31,25 @@ type GameBoardProps = {
 };
 
 const DragAndDropBoard: React.FC<GameBoardProps> = ({ gameData }) => {
+  const [alert, setAlert] = useState<{ message: string; type: "success" | "error" } | null>(null);
+
   const handleDrop = (categoryId: string, item: Item) => {
-    console.log("Drop event detected:", { categoryId, item });
     if (item.category === categoryId) {
-      alert(`¡Correcto! "${item.content}" pertenece a "${categoryId}"`);
+      setAlert({ message: `¡Correcto! "${item.content}" pertenece a "${categoryId}"`, type: "success" });
     } else {
-      alert(`¡Ups! "${item.content}" no pertenece a "${categoryId}"`);
+      setAlert({ message: `¡Ups! "${item.content}" no pertenece a "${categoryId}"`, type: "error" });
     }
   };
 
   return (
-    <div>
     <BoardContainer>
+      {alert && (
+        <AlertMessage
+          message={alert.message}
+          type={alert.type}
+          onClose={() => setAlert(null)}
+        />
+      )}
       <CategoriesContainer>
         {gameData.categories.map((category) => (
           <DropZone
@@ -59,7 +67,6 @@ const DragAndDropBoard: React.FC<GameBoardProps> = ({ gameData }) => {
         ))}
       </ItemsContainer>
     </BoardContainer>
-    </div>
   );
 };
   

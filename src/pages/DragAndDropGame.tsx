@@ -4,20 +4,20 @@ import { GameContainer, TitleContainer } from './DragAndDropGame.styles';
 import DragAndDropBoard from 'src/components/DragAndDropBoard/DragAndDropBoard';
 
 const DragAndDropGamePage = () => {
-    const { title } = useParams();
-    const game = games.find(game => game.title === title);
+  const { title } = useParams();
+  const game = games.find(game => game.title === title);
 
-    if (!game) return <p>Ups... no encontramos el juego</p>;
+  if (!game) return <p>Ups... no encontramos el juego</p>;
 
-      return (
-        <GameContainer>
-          <TitleContainer>
-            <h1>{game.title}</h1>
-            <p>{game.description}</p>
-          </TitleContainer>
-          <DragAndDropBoard gameData={game} />
-        </GameContainer>
-      );
+    return (
+      <GameContainer>
+        <TitleContainer>
+          <h1>{game.title}</h1>
+          <p>{game.description}</p>
+        </TitleContainer>
+        <DragAndDropBoard gameData={game} />
+      </GameContainer>
+    );
 };
 
 export default DragAndDropGamePage;
