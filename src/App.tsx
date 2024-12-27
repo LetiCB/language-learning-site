@@ -8,21 +8,24 @@ import Footer from './components/Footer/Footer';
 import { AppContainer, MainContent } from './App.styles';
 import Breadcrumb from './components/Breadcrumb/Breadcrumb';
 import AppRoutes from './routes/AppRoutes';
+import { ProgressProvider } from './context/ProgressContext';
 
 const App: React.FC = () => {
   return (
     <ThemeProvider theme={theme}>
-      <GlobalStyles />
-      <AppContainer>
-      <Router>
-        <Header />
-        <Breadcrumb />
-        <MainContent>
-          <AppRoutes />
-        </MainContent>
-        <Footer />
-      </Router>
-      </AppContainer>
+      <ProgressProvider>
+        <GlobalStyles />
+        <AppContainer>
+        <Router>
+          <Header />
+          <Breadcrumb />
+          <MainContent>
+            <AppRoutes />
+          </MainContent>
+          <Footer />
+        </Router>
+        </AppContainer>
+      </ProgressProvider>
     </ThemeProvider>
   );
 }

@@ -4,7 +4,7 @@ export const BoardContainer = styled.div`
   display: flex;
   flex-direction: row;
   gap: 3rem;
-  padding: 20px;
+  padding: 1.25rem;
   width: 100%;
 //   height: 100%;
 `;
@@ -14,10 +14,10 @@ export const CategoriesContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  gap: 20px;
+  gap: 1.25rem;
   background-color: #f7f7f7;
   padding: 1.5rem;
-  border-radius: 8px;
+  border-radius: 0.5rem;
   border: 1px solid #ddd;
 `;
 
@@ -26,9 +26,9 @@ export const ItemsContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  gap: 10px;
+  gap: 0.625rem;
   background-color: #f0f0f0;
   padding: 1.5rem;
-  border-radius: 8px;
+  border-radius: 0.5rem;
   border: 1px solid #ddd;
 `;
