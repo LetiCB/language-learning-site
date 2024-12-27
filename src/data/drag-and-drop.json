@@ -1,0 +1,105 @@
+[
+  {
+    "id": "fruits-game",
+    "language": "inglés",
+    "title": "Fruits",
+    "description": "Drag and drop fruits into the correct category.",
+    "image": "path/to/fruits-thumbnail.jpg",
+    "categories": [
+      {
+        "id": "citrus",
+        "name": "Citrus Fruits"
+      },
+      {
+        "id": "tropical",
+        "name": "Tropical Fruits"
+      },
+      {
+        "id": "berries",
+        "name": "Berries"
+      }
+    ],
+    "items": [
+      {
+        "id": "orange",
+        "type": "word",
+        "content": "Orange",
+        "category": "citrus"
+      },
+      {
+        "id": "banana",
+        "type": "word",
+        "content": "Banana",
+        "category": "tropical"
+      },
+      {
+        "id": "strawberry",
+        "type": "word",
+        "content": "Strawberry",
+        "category": "berries"
+      }
+    ]
+  },
+  {
+    "id": "animals-game",
+    "language": "inglés",
+    "title": "Animals",
+    "description": "Match the animals with their categories.",
+    "image": "path/to/animals-thumbnail.jpg",
+    "categories": [
+      {
+        "id": "domestic",
+        "name": "Domestic Animals"
+      },
+      {
+        "id": "wild",
+        "name": "Wild Animals"
+      }
+    ],
+    "items": [
+      {
+        "id": "dog",
+        "type": "image",
+        "content": "path/to/dog-image.jpg",
+        "category": "domestic"
+      },
+      {
+        "id": "elephant",
+        "type": "word",
+        "content": "Elephant",
+        "category": "wild"
+      }
+    ]
+  },
+  {
+    "id": "feelings-game",
+    "language": "inglés",
+    "title": "Feelings",
+    "description": "Match the emotions to their names.",
+    "image": "path/to/feelings-thumbnail.jpg",
+    "categories": [
+      {
+        "id": "positive",
+        "name": "Positive Feelings"
+      },
+      {
+        "id": "negative",
+        "name": "Negative Feelings"
+      }
+    ],
+    "items": [
+      {
+        "id": "happy",
+        "type": "word",
+        "content": "Happy",
+        "category": "positive"
+      },
+      {
+        "id": "sad",
+        "type": "word",
+        "content": "Sad",
+        "category": "negative"
+      }
+    ]
+  }
+]
