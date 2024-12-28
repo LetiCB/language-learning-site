@@ -48,9 +48,6 @@ const DragAndDropGamePage = () => {
 
   if (!game) return <p>Ups... no encontramos el juego</p>;
 
-  console.log('** correct Items ', correctItems);
-  console.log('total Items', totalItems);
-
   return (
       <GameContainer>
         <TitleContainer>

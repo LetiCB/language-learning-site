@@ -1,104 +1,162 @@
 [
   {
-    "id": "fruits-game",
+    "id": "sentimintos-friday-in-love-song",
     "language": "inglés",
-    "title": "Fruits",
-    "description": "Drag and drop fruits into the correct category.",
-    "image": "path/to/fruits-thumbnail.jpg",
+    "title": "Sentimientos",
+    "description": "Ubica las expresiones en su correspondiente categoría",
+    "image": "feelings-game.png",
     "categories": [
       {
-        "id": "citrus",
-        "name": "Citrus Fruits"
-      },
-      {
-        "id": "tropical",
-        "name": "Tropical Fruits"
-      },
-      {
-        "id": "berries",
-        "name": "Berries"
-      }
-    ],
-    "items": [
-      {
-        "id": "orange",
-        "type": "word",
-        "content": "Orange",
-        "category": "citrus"
-      },
-      {
-        "id": "banana",
-        "type": "word",
-        "content": "Banana",
-        "category": "tropical"
-      },
-      {
-        "id": "strawberry",
-        "type": "word",
-        "content": "Strawberry",
-        "category": "berries"
-      }
-    ]
-  },
-  {
-    "id": "animals-game",
-    "language": "inglés",
-    "title": "Animals",
-    "description": "Match the animals with their categories.",
-    "image": "path/to/animals-thumbnail.jpg",
-    "categories": [
-      {
-        "id": "domestic",
-        "name": "Domestic Animals"
-      },
-      {
-        "id": "wild",
-        "name": "Wild Animals"
-      }
-    ],
-    "items": [
-      {
-        "id": "dog",
+        "id": "positivo",
+        "name": "Positivo",
         "type": "image",
-        "content": "path/to/dog-image.jpg",
-        "category": "domestic"
+        "content": "feelings-positive.png"
       },
       {
-        "id": "elephant",
-        "type": "word",
-        "content": "Elephant",
-        "category": "wild"
-      }
-    ]
-  },
-  {
-    "id": "feelings-game",
-    "language": "inglés",
-    "title": "Feelings",
-    "description": "Match the emotions to their names.",
-    "image": "path/to/feelings-thumbnail.jpg",
-    "categories": [
-      {
-        "id": "positive",
-        "name": "Positive Feelings"
+        "id": "neutro",
+        "name": "Neutro",
+        "type": "image",
+        "content": "feelings-neutral.png"
       },
       {
-        "id": "negative",
-        "name": "Negative Feelings"
+        "id": "negativo",
+        "name": "Negativo",
+        "type": "image",
+        "content": "feelings-negative.png"
       }
     ],
     "items": [
       {
-        "id": "happy",
+        "id": "to-be-in-love",
         "type": "word",
-        "content": "Happy",
-        "category": "positive"
+        "content": "To be in love",
+        "category": "positivo"
       },
       {
-        "id": "sad",
+        "id": "to-feel-wonderful",
         "type": "word",
-        "content": "Sad",
-        "category": "negative"
+        "content": "To feel wonderful",
+        "category": "positivo"
+      },
+      {
+        "id": "to-have-a-surprise",
+        "type": "word",
+        "content": "To have a surprise",
+        "category": "positivo"
+      },
+      {
+        "id": "to-feel-your-spirits-rise",
+        "type": "word",
+        "content": "To feel your spirits rise",
+        "category": "positivo"
+      },
+      {
+        "id": "to-smile-at-a-sound",
+        "type": "word",
+        "content": "To smile at a sound",
+        "category": "positivo"
+      },
+      {
+        "id": "to-take-a-big-bite-of-life",
+        "type": "word",
+        "content": "To take a big bite of life",
+        "category": "positivo"
+      },
+      { 
+        "id": "to-see-something-gorgeous",
+        "type": "word",
+        "content": "To see something gorgeous",
+        "category": "positivo"
+      },
+      {
+        "id": "to-never-get-enough-of-something",
+        "type": "word",
+        "content": "To never get enough of something",
+        "category": "positivo"
+      },
+      {
+        "id": "to-wait-for-something",
+        "type": "word",
+        "content": "To wait for something",
+        "category": "neutro"
+      },
+      {
+        "id": "to-feel-time-passes-too-late",
+        "type": "word",
+        "content": "To feel time passes too late",
+        "category": "neutro"
+      },
+      {
+        "id": "to-notice-small-details",
+        "type": "word",
+        "content": "To notice small details",
+        "category": "neutro"
+      },
+      {
+        "id": "to-enjoy-a-midnight-snack",
+        "type": "word",
+        "content": "To enjoy a midnight snack",
+        "category": "neutro"
+      },
+      {
+        "id": "to-have-enough-of-something",
+        "type": "word",
+        "content": "To have enough of something",
+        "category": "neutro"
+      },
+      {
+        "id": "to-feel-blue",
+        "type": "word",
+        "content": "To feel blue",
+        "category": "negativo"
+      },
+      {
+        "id": "to-feel-gray",
+        "type": "word",
+        "content": "To feel gray",
+        "category": "negativo"
+      },
+      {
+        "id": "to-have-a-heavy-heart",
+        "type": "word",
+        "content": "To have a heavy heart",
+        "category": "negativo"
+      },
+      {
+        "id": "to-feel-heartbroken",
+        "type": "word",
+        "content": "To feel heartbroken",
+        "category": "negativo"
+      },
+      {
+        "id": "to-start-the-day-poorly",
+        "type": "word",
+        "content": "To start the day poorly",
+        "category": "negativo"
+      },
+      {
+        "id": "to-fall-apart",
+        "type": "word",
+        "content": "To fall apart",
+        "category": "negativo"
+      },
+      {
+        "id": "to-feel-overwhelmed",
+        "type": "word",
+        "content": "To feel overwhelmed",
+        "category": "negativo"
+      },
+      {
+        "id": "to-stare-at-walls",
+        "type": "word",
+        "content": "To stare at walls",
+        "category": "negativo"
+      },
+      {
+        "id": "to-throw-out-a-frown",
+        "type": "word",
+        "content": "To throw out a frown",
+        "category": "negativo"
       }
     ]
   }

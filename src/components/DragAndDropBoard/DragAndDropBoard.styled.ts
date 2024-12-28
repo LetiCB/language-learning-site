@@ -29,11 +29,11 @@ export const CategoriesContainer = styled.div`
 export const ItemsContainer = styled.div`
   flex: 1;
   display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 0.625rem;
   background-color: #f0f0f0;
-  padding: 1.5rem;
+  padding: 1rem;
   border-radius: 0.5rem;
   border: 1px solid #ddd;
 `;

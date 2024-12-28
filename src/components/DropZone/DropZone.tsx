@@ -30,7 +30,6 @@ const DropZone = React.forwardRef<HTMLDivElement, DropZoneProps>(
           if (typeof ref === "function") {
             ref(node);
           } else if (ref && "current" in ref) {
-            // Aseguramos que el tipo incluye null
             (ref as React.MutableRefObject<HTMLDivElement | null>).current = node;
           }
         }
