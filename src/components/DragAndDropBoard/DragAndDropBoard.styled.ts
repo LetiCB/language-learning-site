@@ -7,6 +7,11 @@ export const BoardContainer = styled.div`
   padding: 1.25rem;
   width: 100%;
 //   height: 100%;
+
+  @media (min-width: 768px) {
+      flex-direction: row;
+      gap: 3rem;
+  }
 `;
 
 export const CategoriesContainer = styled.div`

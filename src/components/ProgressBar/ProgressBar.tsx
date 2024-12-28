@@ -1,10 +1,18 @@
 import { Progress, ProgressBarContainer } from "./ProgressBar.styles";
 import { useProgress } from "src/context/ProgressContext";
 
-const ProgressBar: React.FC = () => {
-  const { correctItems, totalItems } = useProgress();
+type ProgressBarProps = {
+  correctItems: number;
+  totalItems: number;
+};
 
-  const percentage = totalItems > 0 ? (correctItems / totalItems) * 100 : 0;
+const ProgressBar: React.FC<ProgressBarProps> = ({ correctItems, totalItems }) => {
+  const context = useProgress();
+
+  const total = totalItems ?? context.totalItems;
+  const correct = correctItems ?? context.correctItems;
+
+  const percentage = total > 0 ? (correct / total) * 100 : 0;
 
   return (
     <ProgressBarContainer>

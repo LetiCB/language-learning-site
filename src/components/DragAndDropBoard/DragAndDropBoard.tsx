@@ -1,8 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import DraggableItem from "../DraggableItem/DraggableItem";
 import DropZone from "../DropZone/DropZone";
 import { BoardContainer, CategoriesContainer, ItemsContainer } from "./DragAndDropBoard.styled";
-import AlertMessage from "../Alert/AlertMessage";
 import { useProgress } from "src/context/ProgressContext";
 
 type Item = {
@@ -29,36 +28,28 @@ type GameData = {
 
 type GameBoardProps = {
   gameData: GameData;
+  onAlert: (message: string, type: "success" | "error") => void;
 };
 
-const DragAndDropBoard: React.FC<GameBoardProps> = ({ gameData }) => {
-  const [alert, setAlert] = useState<{ message: string; type: "success" | "error" } | null>(null);
-  const { correctItems, addCorrectItem, placedItems, addPlacedItem } = useProgress();
+const DragAndDropBoard: React.FC<GameBoardProps> = ({ gameData, onAlert }) => {
+  const { addCorrectItem, placedItems, addPlacedItem } = useProgress();
 
-  const handleDrop = (categoryId: string, item: Item) => {
-    if (placedItems.includes(item.id)) {
-      setAlert({ message: `"${item.content}" ya ha sido colocado.`, type: "error" });
+  const handleDrop = (categoryId: string, { id, content, category }: Item) => {
+    if (placedItems.includes(id)) {
+      onAlert(`"${content}" ya ha sido colocado.`, "error");
       return;
     }
-  
-    if (item.category === categoryId) {
-      addPlacedItem(item.id);
+    if (category === categoryId) {
+      addPlacedItem(id);
       addCorrectItem();
-      setAlert({ message: `¡Correcto! "${item.content}" pertenece a "${categoryId}"`, type: "success" });
+      onAlert(`¡Correcto! "${content}" pertenece a "${categoryId}"`, "success");
     } else {
-      setAlert({ message: `¡Ups! "${item.content}" no pertenece a "${categoryId}"`, type: "error" });
+      onAlert(`¡Ups! "${content}" no pertenece a "${categoryId}"`, "error");
     }
   };
-
+ 
   return (
     <BoardContainer>
-      {alert && (
-        <AlertMessage
-          message={alert.message}
-          type={alert.type}
-          onClose={() => setAlert(null)}
-        />
-      )}
       <CategoriesContainer>
         {gameData.categories.map((category) => (
           <DropZone
