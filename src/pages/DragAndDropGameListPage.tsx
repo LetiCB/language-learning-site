@@ -18,7 +18,7 @@ const DragAndDropGameList = () => {
               title={game.title}
               description={game.description}
               onClick={() => navigate(`/${language}/juegos-de-arrastre/${game.title}`)}
-              image={game.image ? `/images/${game.image}` : '/images/no-image.png'}
+              image={game.image ? `/images/dragAndDrop/${game.image}` : '/images/no-image.png'}
             />
           ))}
         </GameListContainer>

@@ -13,4 +13,10 @@ export const DropZoneContainer = styled.div`
   &:hover {
     background-color: #e0e0e0;
   }
+
+  img {
+    max-height: 7rem;
+    width: auto;
+    border-radius: 5px;
+  }
 `;

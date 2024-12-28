@@ -8,24 +8,47 @@ import { useEffect, useState } from 'react';
 import Modal from 'src/components/Modal/Modal';
 import AlertMessage from 'src/components/Alert/AlertMessage';
 
+type Item = {
+  id: string;
+  type: string;
+  content: string;
+  category: string;
+};
+
 const DragAndDropGamePage = () => {
   const { title } = useParams();
   const { correctItems, totalItems, resetProgress, setTotalItems } = useProgress();
 
   const game = games.find(game => game.title === title);
 
+  const [shuffledItems, setShuffledItems] = useState<Item[]>([]);
   const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
   const [alert, setAlert] = useState<{ message: string; type: "success" | "error" } | null>(null);
+
+  const shuffleItems = (items: Item[]) => {
+    const shuffled = [...items];
+    for (let i = shuffled.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+    }
+    return shuffled;
+  };
 
   const showAlert = (message: string, type: "success" | "error") => {
     setAlert({ message, type });
   };
 
-  useEffect(() => {
+  const initializeGame = () => {
     if (game) {
+      const shuffled = shuffleItems(game.items);
+      setShuffledItems(shuffled);
       resetProgress();
-      setTotalItems(game.items.length);
+      setTotalItems(shuffled.length);      
     }
+  };
+
+  useEffect(() => {
+    initializeGame();
   }, [game]);
 
   useEffect(() => {
@@ -40,7 +63,7 @@ const DragAndDropGamePage = () => {
   };
 
   const handleReset = () => {
-    resetProgress();
+    initializeGame();
     setIsModalOpen(false);
     if (game) setTotalItems(game.items.length);
     window.scrollTo(0, 0);
@@ -55,7 +78,10 @@ const DragAndDropGamePage = () => {
           <p>{game.description}</p>
         </TitleContainer>
         <ProgressBar correctItems={correctItems} totalItems={totalItems} />
-        <DragAndDropBoard gameData={game} onAlert={showAlert} />
+        <DragAndDropBoard 
+          gameData={{ ...game, items: shuffledItems }} 
+          onAlert={showAlert} 
+        />
         {alert && (
           <AlertMessage
             message={alert.message}

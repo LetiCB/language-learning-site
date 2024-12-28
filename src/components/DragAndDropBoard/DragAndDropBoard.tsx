@@ -14,6 +14,8 @@ type Item = {
 type Category = {
   id: string;
   name: string;
+  type: string;
+  content: string;
 };
 
 type GameData = {
@@ -57,7 +59,11 @@ const DragAndDropBoard: React.FC<GameBoardProps> = ({ gameData, onAlert }) => {
             category={category.id}
             onDrop={(item) => handleDrop(category.id, item)}
           >
-            <h3>{category.name}</h3>
+            {category.type === "image" && category.content ? (
+              <img src={`/images/dragAndDrop/${category.content}`} alt={category.name} />
+            ) : (
+              <h3>{category.name}</h3>
+            )}
           </DropZone>
         ))}
       </CategoriesContainer>
