@@ -1,6 +1,6 @@
 [
   {
-    "id": 1,
+    "id": "the-cure-friday-im-in-love",
     "language": "inglés",
     "artist": "The Cure",
     "title": "Friday I'm In Love",
@@ -181,7 +181,7 @@
     ]
   },
   {
-    "id": 2,
+    "id": "sofia-essaidi-je-croque-la-vie",
     "language": "francés",
     "artist": "Sofia Essaïdi",
     "title": "J'croque la vie",
@@ -379,7 +379,7 @@
     ]
   },
   {
-    "id": 3,
+    "id": "joyce-jonathan-les-petites-jolies-choses",
     "language": "francés",
     "artist": "Joyce Jonathan",
     "title": "Les p'tites jolies choses",
@@ -613,7 +613,7 @@
     ]
   },
   {
-    "id": 4,
+    "id": "zaho-la-symphonie-des-éclairs",
     "language": "francés",
     "artist": "Zaho de Sagazan",
     "title": "La symphonie des éclairs",
@@ -767,6 +767,350 @@
       {
         "line": "En chantant _______ la symphonie des éclairs",
         "options": ["sous la pluie", "avec passion", "pour les étoiles"]
+      }
+    ]
+  },
+  {
+    "id": "zazie-je-suis-un-homme",
+    "language": "francés",
+    "artist": "Zazie",
+    "title": "Je suis un homme",
+    "url": "oSIoP7h4B_M",
+    "image": "zazie-je-suis-un-homme.png",
+    "lyrics": [
+      {
+        "line": "Je suis ______ de Cro-Magnon",
+        "options": ["un homme", "le roi", "un héros"]
+      },
+      {
+        "line": "______ un singe ou un poisson",
+        "options": ["Je suis", "Comme", "Peut-être"]
+      },
+      {
+        "line": "Sur la Terre, en ______",
+        "options": ["toute saison", "plein hiver", "chaque région"]
+      },
+      {
+        "line": "Moi, je tourne en rond, je tourne _____",
+        "options": ["en rond", "autour", "à fond"]
+      },
+      {
+        "line": "Je suis _____ puis des millions",
+        "options": ["un seul", "le roi", "tout"]
+      },
+      {
+        "line": "Je suis un homme au cœur _____",
+        "options": ["de lion", "d'acier", "de pierre"]
+      },
+      {
+        "line": "À _____ en toute saison",
+        "options": ["la guerre", "la fête", "la chasse"]
+      },
+      {
+        "line": "Moi, je tourne en rond, _____ en rond",
+        "options": ["je tourne", "je passe", "je cours"]
+      },
+      {
+        "line": "Je suis un homme plein _____",
+        "options": ["d'ambition", "de passion", "d'illusion"]
+      },
+      {
+        "line": "Belle voiture et ______",
+        "options": ["belle maison", "grande télé", "riche maison"]
+      },
+      {
+        "line": "Dans _____, dans le salon",
+        "options": ["la chambre", "la cuisine", "la cour"]
+      },
+      {
+        "line": "Moi, je tourne en rond, _________",
+        "options": ["je tourne en rond", "je perds le son", "je trouve raison"]
+      },
+      {
+        "line": "J'ai fait l'amour et _____",
+        "options": ["la révolution", "la guerre", "la destruction"]
+      },
+      {
+        "line": "J'ai fait le tour de _____",
+        "options": ["la question", "la planète", "mes raisons"]
+      },
+      {
+        "line": "_____, avance à reculons",
+        "options": ["J'avance", "Je cours", "Je tombe"]
+      },
+      {
+        "line": "Oui, _____, je tourne en rond",
+        "options": ["je tourne en rond", "je perds raison", "je chante ce son"]
+      },
+      {
+        "line": "Tu vois, j'suis _____ un homme",
+        "options": ["pas", "bien", "plus"]
+      },
+      {
+        "line": "Je suis _____ de l'illusion",
+        "options": ["le roi", "l'esclave", "le maître"]
+      },
+      {
+        "line": "Au fond, qu'on _____",
+        "options": ["me pardonne", "me laisse", "m'oublie"]
+      },
+      {
+        "line": "Je suis le roi, _____ des cons",
+        "options": ["le roi", "le maître", "le seul"]
+      },
+      {
+        "line": "J'ai fait le monde ______",
+        "options": ["à ma façon", "par mes mains", "dans l'illusion"]
+      },
+      {
+        "line": "Coulé dans _____ et le béton",
+        "options": ["l'or", "l'argent", "la pierre"]
+      },
+      {
+        "line": "Corps en cage et cœur ______",
+        "options": ["en prison", "de pierre", "dans l'illusion"]
+      },
+      {
+        "line": "Moi, ______, je tourne en rond",
+        "options": ["je tourne en rond", "je danse à fond", "je reste au fond"]
+      },
+      {
+        "line": "Assis devant ______",
+        "options": ["ma télévision", "mon miroir", "ma maison"]
+      },
+      {
+        "line": "Je suis de l'Homme ______",
+        "options": ["la négation", "la création", "l'évasion"]
+      },
+      {
+        "line": "Pur ______ de consommation",
+        "options": ["produit", "héritier", "chant"]
+      },
+      {
+        "line": "Oui, mon compte est bon, _____ est bon",
+        "options": ["mon compte", "le monde", "tout"]
+      },
+      {
+        "line": "Tu vois, j'suis pas ______",
+        "options": ["un homme", "un héros", "un roi"]
+      },
+      {
+        "line": "Je suis le roi _____",
+        "options": ["de l'illusion", "des rêves", "des hommes"]
+      },
+      {
+        "line": "_____, qu'on me pardonne",
+        "options": ["Au fond", "Alors", "Pourtant"]
+      },
+      {
+        "line": "______, le roi des cons",
+        "options": ["Je suis le roi", "Toujours", "Voilà"]
+      },
+      {
+        "line": "C'est moi le maître _____",
+        "options": ["du feu", "des cieux", "des dieux"]
+      },
+      {
+        "line": "Le maître _____",
+        "options": ["du jeu", "de tout", "des lieux"]
+      },
+      {
+        "line": "Le maître ______ et vois ce que j'en ai fait",
+        "options": ["du monde", "des hommes", "du temps"]
+      },
+      {
+        "line": "Une terre _____",
+        "options": ["glacée", "dévastée", "abandonnée"]
+      },
+      {
+        "line": "Une terre _____",
+        "options": ["brûlée", "abandonnée", "gagnée"]
+      },
+      {
+        "line": "_____ des hommes que les hommes abandonnent",
+        "options": ["La terre", "Le monde", "Les rêves"]
+      },
+      {
+        "line": "Je suis un homme au pied _____",
+        "options": ["du mur", "des cieux", "du feu"]
+      },
+      {
+        "line": "Comme une erreur de ______",
+        "options": ["la nature", "ma culture", "l'aventure"]
+      },
+      {
+        "line": "Sur la Terre, sans d'autre ______",
+        "options": ["raison", "doute", "vision"]
+      },
+      {
+        "line": "Moi, je tourne en rond, _________",
+        "options": ["je tourne en rond", "je reste au fond", "je perds ma raison"]
+      },
+      {
+        "line": "Je suis un homme et je _____",
+        "options": ["mesure", "souffre", "résiste"]
+      },
+      {
+        "line": "Toute ______ de ma nature",
+        "options": ["l'horreur", "la peine", "la folie"]
+      },
+      {
+        "line": "Pour ______, ma punition (je suis le roi, le roi des cons)",
+        "options": ["ma peine", "ma faute", "ma folie"]
+      },
+      {
+        "line": "Moi, je tourne en rond, _________",
+        "options": ["je tourne en rond", "je reste au fond", "je chante mon nom"]
+      },
+      {
+        "line": "Je suis un homme et _____ (au fond, qu'on me pardonne)",
+        "options": ["je mesure", "je ressens", "je découvre"]
+      },
+      {
+        "line": "Toute l'horreur de ______",
+        "options": ["ma nature", "mon passé", "mon futur"]
+      },
+      {
+        "line": "Pour ma peine, _____ (je suis le roi, le roi des cons)",
+        "options": ["ma punition", "ma raison", "mon pardon"]
+      },
+      {
+        "line": "______, je tourne en rond, je tourne en rond",
+        "options": ["Moi", "Toujours", "Hélas"]
+      },
+      {
+        "line": "Moi, _________, je tourne en rond",
+        "options": ["je tourne en rond", "je reste au fond", "je perds ma raison"]
+      },
+      {
+        "line": "En ______",
+        "options": ["rond", "paix", "silence"]
+      }
+    ]
+  },
+  {
+    "id": "les-enfoires-secrets",
+    "language": "francés",
+    "artist": "Les Enfoirés",
+    "title": "Secret",
+    "url": "Vf7HSYwbUy4",
+    "image": "les-enfoires-secrets.png",
+    "lyrics": [
+      {
+        "line": "Tu sais, je suis ______ à te voir grandir",
+        "options": ["pas prête", "prête", "surprise"]
+      },
+      {
+        "line": "J'ai peur de c'que tu ______",
+        "options": ["vas devenir", "deviendras", "seras"]
+      },
+      {
+        "line": "_____ je sais c'que c'est d'avoir mal",
+        "options": ["Parce que", "Quand", "Mais"]
+      },
+      {
+        "line": "J'pourrais pas t'empêcher ______",
+        "options": ["d'avoir mal", "de souffrir", "de pleurer"]
+      },
+      {
+        "line": "Tu sais, je veux que tu sois ______",
+        "options": ["heureuse", "parfaite", "forte"]
+      },
+      {
+        "line": "Et j'veux te voir ______",
+        "options": ["tomber amoureuse", "grandir heureuse", "t'épanouir"]
+      },
+      {
+        "line": "Et même si je vais ______",
+        "options": ["te protéger", "te suivre", "te guider"]
+      },
+      {
+        "line": "______ j'vais devoir te voir tomber",
+        "options": ["Parfois", "Souvent", "Rarement"]
+      },
+      {
+        "line": "Et si les filles te semblent ______",
+        "options": ["fragiles", "simples", "difficiles"]
+      },
+      {
+        "line": "Sache que t'as en toi ______ qui se déploie",
+        "options": ["une force", "un espoir", "un courage"]
+      },
+      {
+        "line": "Comme toutes les filles, ça sera ______",
+        "options": ["pas facile", "compliqué", "très dur"]
+      },
+      {
+        "line": "Mais moi, je crois ______",
+        "options": ["en toi", "en nous", "à toi"]
+      },
+      {
+        "line": "Je vais te confier mon plus ______",
+        "options": ["gros secret", "grand secret", "petit secret"]
+      },
+      {
+        "line": "J'ai ______ eu un peu d'mal à m'aimer",
+        "options": ["toujours", "souvent", "parfois"]
+      },
+      {
+        "line": "Et j'apprends tous les jours à ________",
+        "options": ["devenir douce", "être forte", "changer"]
+      },
+      {
+        "line": "J'crois qu'j'ai pas ______, j'attends que ça pousse",
+        "options": ["fait le tour", "trouvé ma place", "compris tout"]
+      },
+      {
+        "line": "C'est qu'toi tu feras pas la ______",
+        "options": ["même erreur", "même chose", "même route"]
+      },
+      {
+        "line": "Je sais qu'c'est pas simple de croiser ______",
+        "options": ["les miroirs", "les regards", "les chemins"]
+      },
+      {
+        "line": "Qu'tu vas parfois _____ dans le noir",
+        "options": ["pleurer", "te perdre", "rêver"]
+      },
+      {
+        "line": "Je l'ai vécue ______ avant toi",
+        "options": ["mille fois", "cent fois", "quelques fois"]
+      },
+      {
+        "line": "C'est _____ à l'intérieur de moi",
+        "options": ["encore", "toujours", "déjà"]
+      },
+      {
+        "line": "Et si _____ de pas regarder",
+        "options": ["c'est dur", "c'est facile", "c'est étrange"]
+      },
+      {
+        "line": "Les autres sans te _____ oubliée",
+        "options": ["sentir", "croire", "trouver"]
+      },
+      {
+        "line": "Il faut qu'tu saches que je ______",
+        "options": ["te comprends", "t'écoute", "te guide"]
+      },
+      {
+        "line": "Que grandir parfois, ça prend _____",
+        "options": ["du temps", "des années", "de la force"]
+      },
+      {
+        "line": "Mais moi, ______ en toi",
+        "options": ["je crois", "je compte", "j'espère"]
+      },
+      {
+        "line": "J'ai toujours eu _____ d'mal à m'aimer",
+        "options": ["un peu", "beaucoup", "parfois"]
+      },
+      {
+        "line": "Et j'apprends _____ à devenir douce",
+        "options": ["tous les jours", "chaque instant", "lentement"]
+      },
+      {
+        "line": "J'attends que ça _____",
+        "options": ["pousse", "change", "vienne"]
       }
     ]
   }

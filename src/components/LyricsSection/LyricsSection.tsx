@@ -20,7 +20,7 @@ interface SongLine {
 }
 
 interface Song {
-  id: number;
+  id: string;
   language: string;
   artist: string;
   title: string;

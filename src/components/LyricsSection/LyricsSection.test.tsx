@@ -4,7 +4,7 @@ import { render, screen, fireEvent, cleanup } from "@testing-library/react";
 import LyricsSection from "./LyricsSection";
 
 const mockSong = {
-  id: 1,
+  id: "1",
   language: "Inglés",
   artist: "Artist Mock",
   title: "Song Mock",
