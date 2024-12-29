@@ -1,13 +1,13 @@
 import styled from "styled-components";
 
-export const DropZoneContainer = styled.div`
-  padding: 20px;
-  margin: 10px;
-  border: 2px dashed #ccc;
+export const DropZoneContainer = styled.div<{ categoryColor: string }>`
+  padding: 1.25rem;
+  margin: 0.625rem;
+  border: 2px dashed ${({ categoryColor }) => categoryColor || "#ccc"};
   border-radius: 5px;
-  min-height: 150px;
+  min-height: 9rem;
   text-align: center;
-  background-color: #f7f7f7; /* O un color visualmente claro */
+  background-color: #f7f7f7;
   transition: background-color 0.3s ease;
   
   &:hover {

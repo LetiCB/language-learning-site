@@ -9,8 +9,8 @@ type Item = {
   category: string;
 };
 
-const DraggableItem = React.forwardRef<HTMLDivElement, { item: Item; isCorrect: boolean }>(
-  ({ item, isCorrect }, ref) => {
+const DraggableItem = React.forwardRef<HTMLDivElement, { item: Item; isCorrect: boolean, categoryColor?: string; }>(
+  ({ item, isCorrect, categoryColor }, ref) => {
     const [, dragRef] = useDrag({
       type: "ITEM",
       item,
@@ -20,6 +20,7 @@ const DraggableItem = React.forwardRef<HTMLDivElement, { item: Item; isCorrect: 
     return (
       <DraggableItemContainer
         isCorrect={isCorrect}
+        categoryColor={categoryColor}
         ref={(node) => {
           dragRef(node);
           if (typeof ref === "function") {

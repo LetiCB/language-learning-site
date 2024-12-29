@@ -13,10 +13,11 @@ type DropZoneProps = {
   category: string;
   onDrop: (item: Item) => void;
   children: React.ReactNode;
+  categoryColor: string;
 };
 
 const DropZone = React.forwardRef<HTMLDivElement, DropZoneProps>(
-  ({ category, onDrop, children }, ref) => {
+  ({ category, onDrop, children, categoryColor }, ref) => {
     const [, dropRef] = useDrop({
       accept: "ITEM",
       drop: (item: Item) => {
@@ -36,7 +37,7 @@ const DropZone = React.forwardRef<HTMLDivElement, DropZoneProps>(
       };
   
       return (
-        <DropZoneContainer ref={combinedRef}>
+        <DropZoneContainer ref={combinedRef} categoryColor={categoryColor}>
           {children}
         </DropZoneContainer>
       );
