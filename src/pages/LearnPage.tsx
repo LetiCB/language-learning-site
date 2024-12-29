@@ -3,7 +3,8 @@ import { useNavigate } from "react-router-dom";
 import { useParams } from "react-router-dom";
 import Card from "src/components/Card/Card";
 import { LearnPageContainer, LearnPageGrid } from "./LearnPage.styles";
-import Songs from "./../images/songs.png"
+import Songs from "./../images/songs.png";
+import DragAndDrop from "./../images/drag-and-drop.png";
 
 const LearnPage: React.FC = () => {
   const navigate = useNavigate();
@@ -15,8 +16,14 @@ const LearnPage: React.FC = () => {
       <LearnPageGrid>
         <Card
           image={Songs}
-          title="Cantemos canciones"
+          title="Completar canciones"
           onClick={() => navigate(`/${language}/canciones`)}
+          variant="round"
+        />
+        <Card
+          image={DragAndDrop}
+          title="Juegos de arrastre"
+          onClick={() => navigate(`/${language}/juegos-de-arrastre`)}
           variant="round"
         />
       </LearnPageGrid>
