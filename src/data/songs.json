@@ -997,121 +997,182 @@
     "image": "les-enfoires-secrets.png",
     "lyrics": [
       {
-        "line": "Tu sais, je suis ______ à te voir grandir",
-        "options": ["pas prête", "prête", "surprise"]
+        "line": "Tu sais, je suis _____ à te voir grandir",
+        "options": ["pas prête", "pas sage", "pas loin"]
       },
       {
-        "line": "J'ai peur de c'que tu ______",
-        "options": ["vas devenir", "deviendras", "seras"]
+        "line": "J'ai peur de c'que tu _____",
+        "options": ["vas devenir", "vas choisir", "vas partir"]
       },
       {
         "line": "_____ je sais c'que c'est d'avoir mal",
-        "options": ["Parce que", "Quand", "Mais"]
+        "options": ["Parce que", "Presque", "Pourquoi"]
       },
       {
-        "line": "J'pourrais pas t'empêcher ______",
-        "options": ["d'avoir mal", "de souffrir", "de pleurer"]
+        "line": "J'pourrais pas t'empêcher _____",
+        "options": ["d'avoir mal", "d'être là", "de parler"]
       },
       {
-        "line": "Tu sais, je veux que tu sois ______",
-        "options": ["heureuse", "parfaite", "forte"]
+        "line": "Tu sais, je veux que tu sois _____",
+        "options": ["heureuse", "chanceuse", "généreuse"]
       },
       {
-        "line": "Et j'veux te voir ______",
-        "options": ["tomber amoureuse", "grandir heureuse", "t'épanouir"]
+        "line": "Et j'veux te voir _____",
+        "options": ["tomber amoureuse", "danser heureuse", "vivre dangereuse"]
       },
       {
-        "line": "Et même si je vais ______",
-        "options": ["te protéger", "te suivre", "te guider"]
+        "line": "Et même si je vais _____",
+        "options": ["te protéger", "te juger", "te quitter"]
       },
       {
-        "line": "______ j'vais devoir te voir tomber",
-        "options": ["Parfois", "Souvent", "Rarement"]
+        "line": "_____ j'vais devoir te voir tomber",
+        "options": ["Parfois", "Pourtant", "Presque"]
       },
       {
-        "line": "Et si les filles te semblent ______",
-        "options": ["fragiles", "simples", "difficiles"]
+        "line": "Et si les filles te semblent _____",
+        "options": ["fragiles", "tranquilles", "futiles"]
       },
       {
-        "line": "Sache que t'as en toi ______ qui se déploie",
-        "options": ["une force", "un espoir", "un courage"]
+        "line": "Sache que t'as en toi _____ qui se déploie",
+        "options": ["une force", "une chance", "une place"]
       },
       {
-        "line": "Comme toutes les filles, ça sera ______",
-        "options": ["pas facile", "compliqué", "très dur"]
+        "line": "Comme toutes les filles, ça sera _____",
+        "options": ["pas facile", "pas utile", "pas fragile"]
       },
       {
-        "line": "Mais moi, je crois ______",
-        "options": ["en toi", "en nous", "à toi"]
+        "line": "Mais moi, je crois _____",
+        "options": ["en toi", "en moi", "au choix"]
       },
       {
-        "line": "Je vais te confier mon plus ______",
-        "options": ["gros secret", "grand secret", "petit secret"]
+        "line": "Je vais te confier mon plus _____",
+        "options": ["gros secret", "beau souhait", "vieux regret"]
       },
       {
-        "line": "J'ai ______ eu un peu d'mal à m'aimer",
+        "line": "J'ai _____ eu un peu d'mal à m'aimer",
         "options": ["toujours", "souvent", "parfois"]
       },
       {
-        "line": "Et j'apprends tous les jours à ________",
-        "options": ["devenir douce", "être forte", "changer"]
+        "line": "Et j'apprends tous les jours à _____",
+        "options": ["devenir douce", "trouver ma place", "faire des choix"]
       },
       {
-        "line": "J'crois qu'j'ai pas ______, j'attends que ça pousse",
-        "options": ["fait le tour", "trouvé ma place", "compris tout"]
+        "line": "J'crois qu'j'ai pas _____, j'attends que ça pousse",
+        "options": ["fait le tour", "fait le choix", "fait l'effort"]
       },
       {
-        "line": "C'est qu'toi tu feras pas la ______",
-        "options": ["même erreur", "même chose", "même route"]
+        "line": "Je vais _____ mon plus gros secret",
+        "options": ["te confier", "t'expliquer", "te montrer"]
       },
       {
-        "line": "Je sais qu'c'est pas simple de croiser ______",
-        "options": ["les miroirs", "les regards", "les chemins"]
+        "line": "J'ai toujours eu _____ d'mal à m'aimer",
+        "options": ["un peu", "beaucoup", "souvent"]
+      },
+      {
+        "line": "_____ ce que j'espère de tout mon cœur",
+        "options": ["Maintenant", "Cependant", "Pourtant"]
+      },
+      {
+        "line": "C'est qu'toi tu feras pas la _____",
+        "options": ["même erreur", "grande peur", "fausse fleur"]
+      },
+      {
+        "line": "Je sais qu'c'est pas simple de croiser _____",
+        "options": ["les miroirs", "les regards", "les histoires"]
       },
       {
         "line": "Qu'tu vas parfois _____ dans le noir",
-        "options": ["pleurer", "te perdre", "rêver"]
+        "options": ["pleurer", "rêver", "douter"]
       },
       {
-        "line": "Je l'ai vécue ______ avant toi",
-        "options": ["mille fois", "cent fois", "quelques fois"]
+        "line": "Je l'ai vécue _____ avant toi",
+        "options": ["mille fois", "sans toi", "tant de fois"]
       },
       {
         "line": "C'est _____ à l'intérieur de moi",
-        "options": ["encore", "toujours", "déjà"]
+        "options": ["encore", "fort", "clair"]
       },
       {
         "line": "Et si _____ de pas regarder",
-        "options": ["c'est dur", "c'est facile", "c'est étrange"]
+        "options": ["c'est dur", "c'est sûr", "c'est court"]
       },
       {
         "line": "Les autres sans te _____ oubliée",
         "options": ["sentir", "croire", "trouver"]
       },
       {
-        "line": "Il faut qu'tu saches que je ______",
-        "options": ["te comprends", "t'écoute", "te guide"]
+        "line": "Il faut qu'tu saches que je _____",
+        "options": ["te comprends", "t'attends", "te soutiens"]
       },
       {
         "line": "Que grandir parfois, ça prend _____",
-        "options": ["du temps", "des années", "de la force"]
+        "options": ["du temps", "des gens", "un vent"]
       },
       {
-        "line": "Mais moi, ______ en toi",
-        "options": ["je crois", "je compte", "j'espère"]
+        "line": "Et si _____ te semblent fragiles",
+        "options": ["les filles", "les rêves", "les vies"]
+      },
+      {
+        "line": "Sache que t'as _____ une force qui se déploie",
+        "options": ["en toi", "chez moi", "devant toi"]
+      },
+      {
+        "line": "Comme toutes les filles, ça _____ facile",
+        "options": ["sera pas", "sera bien", "sera là"]
+      },
+      {
+        "line": "Mais moi, _____ en toi",
+        "options": ["je crois", "je vois", "je sais"]
+      },
+      {
+        "line": "Je vais _____ mon plus gros secret",
+        "options": ["te confier", "t'écrire", "te montrer"]
       },
       {
         "line": "J'ai toujours eu _____ d'mal à m'aimer",
-        "options": ["un peu", "beaucoup", "parfois"]
+        "options": ["un peu", "beaucoup", "souvent"]
       },
       {
         "line": "Et j'apprends _____ à devenir douce",
-        "options": ["tous les jours", "chaque instant", "lentement"]
+        "options": ["tous les jours", "avec amour", "sans détour"]
       },
       {
-        "line": "J'attends que ça _____",
-        "options": ["pousse", "change", "vienne"]
+        "line": "J'crois qu'j'ai pas fait le tour, j'attends que ça _____",
+        "options": ["pousse", "cesse", "danse"]
+      },
+      {
+        "line": "_____ te confier mon plus gros secret",
+        "options": ["Je vais", "J'aimerais", "Je peux"]
+      },
+      {
+        "line": "_____ un peu d'mal à m'aimer",
+        "options": ["J'ai toujours eu", "Je n'ai jamais eu", "J'ai déjà vu"]
+      },
+      {
+        "line": "Maintenant ce que j'espère de _____",
+        "options": ["tout mon cœur", "tous mes rêves", "ma meilleure peur"]
+      },
+      {
+        "line": "C'est qu'toi _____ la même erreur",
+        "options": ["tu feras pas", "tu verras pas", "tu diras pas"]
+      },
+      {
+        "line": "Je vais te confier _____",
+        "options": ["mon plus gros secret", "un bel espoir", "un grand regret"]
+      },
+      {
+        "line": "J'ai toujours eu un peu _____",
+        "options": ["d'mal à m'aimer", "de temps à rêver", "de chance à donner"]
+      },
+      {
+        "line": "Maintenant ce que _____ de tout mon cœur",
+        "options": ["j'espère", "je veux", "je crois"]
+      },
+      {
+        "line": "C'est qu'toi tu feras pas _____",
+        "options": ["la même erreur", "le mauvais choix", "la grande peur"]
       }
     ]
   }
 ]
+  

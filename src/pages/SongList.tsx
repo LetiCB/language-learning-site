@@ -18,7 +18,7 @@ const SongList = () => {
             title={song.title}
             description={song.artist}
             onClick={() => navigate(`/${language}/canciones/${song.title}`)}
-            image={song.image ? `/images/songs/${song.image}` : '/images/no-image.png'}
+            image={song.image ? `/images/songs/${song.image}` : '/images/songs/no-image.png'}
           />
         ))}
       </SongListGrid>

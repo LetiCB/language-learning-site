@@ -5,6 +5,7 @@ import Card from "src/components/Card/Card";
 import { LearnPageContainer, LearnPageGrid } from "./LearnPage.styles";
 import Songs from "./../images/songs.png";
 import DragAndDrop from "./../images/drag-and-drop.png";
+import Hangman from "./../images/hangman.png";
 
 const LearnPage: React.FC = () => {
   const navigate = useNavigate();
@@ -24,6 +25,12 @@ const LearnPage: React.FC = () => {
           image={DragAndDrop}
           title="Juegos de arrastre"
           onClick={() => navigate(`/${language}/juegos-de-arrastre`)}
+          variant="round"
+        />
+        <Card
+          image={Hangman}
+          title="Juegos de ahorcado"
+          onClick={() => navigate(`/${language}/ahoracado`)}
           variant="round"
         />
       </LearnPageGrid>
