@@ -3,6 +3,7 @@ import WordDisplay from '../WordDisplay/WordDisplay';
 import Keyboard from '../Keyboard/Keyboard';
 import HangmanFigure from '../HangmanFigure/HangmanFigure';
 import { GameContainer, KeyboardContainer, RemainingAttempts, RightColumnContainer, Number } from './HangmanGame.styles';
+import Modal from '../Modal/Modal';
 
 interface HangmanGameProps {
   word: string;
@@ -16,6 +17,7 @@ const HangmanGame: React.FC<HangmanGameProps> = ({ word, difficulty, letters, ma
     const [wrongGuesses, setWrongGuesses] = useState<number>(0);
     const [correctLetters, setCorrectLetters] = useState<string[]>([]);
     const [incorrectLetters, setIncorrectLetters] = useState<string[]>([]);
+    const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
   
     const normalizedWord = word.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
     const displayWord = word;
@@ -42,6 +44,18 @@ const HangmanGame: React.FC<HangmanGameProps> = ({ word, difficulty, letters, ma
     const filteredLetters = difficulty === 'easy' 
       ? letters.filter((letter) => !/[áéíóúäëïöüàèìòùâêîôûçñ']/i.test(letter)) 
       : letters.filter((letter) => !/[^a-zA-Záéíóúäëïöüàèìòùâêîôûçñ]/i.test(letter));
+
+    const closeModal = () => {
+      setIsModalOpen(false);
+    };
+
+    const handleReset = () => {
+      setGuessedLetters([]);
+      setWrongGuesses(0);
+      setCorrectLetters([]);
+      setIncorrectLetters([]);
+      setIsModalOpen(false);
+    };
   
     useEffect(() => {
       setGuessedLetters([]);
@@ -49,6 +63,11 @@ const HangmanGame: React.FC<HangmanGameProps> = ({ word, difficulty, letters, ma
       setCorrectLetters([]);
       setIncorrectLetters([]);
     }, [word, difficulty]);
+
+    useEffect(() => {
+      if (isGameOver || isGameWon)
+        setIsModalOpen(true);
+    }, [isGameOver, isGameWon])
 
     return (
       <div>
@@ -72,8 +91,19 @@ const HangmanGame: React.FC<HangmanGameProps> = ({ word, difficulty, letters, ma
               disabled={isGameOver || isGameWon}
           />
         </KeyboardContainer>
-        {isGameOver && <p>¡Perdiste! La palabra era: {displayWord}</p>}
-        {isGameWon && <p>¡Felicidades! Adivinaste la palabra</p>}
+        {isModalOpen && (
+          <Modal
+            title={isGameOver ? "¡Perdiste!" : "¡Felicidades!"}
+            message={isGameOver 
+              ? `La palabra era: ${displayWord}` 
+              : "Adivinaste la palabra"}
+            primaryButtonText="Volver a jugar"
+            primaryButtonOnClick={handleReset}
+            secondaryButtonText="Cerrar"
+            secondaryButtonOnClick={closeModal}
+            onClose={closeModal}
+          />
+        )}
       </div>
     );
   };
