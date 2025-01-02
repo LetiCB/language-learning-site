@@ -1,0 +1,29 @@
+[
+    {
+        "id": "ingles-inicial-animals",
+        "language": "inglés",
+        "category": "Inicial",
+        "theme": "Animals",
+        "description": "",
+        "image": "",
+        "words": ["elephant", "giraffe", "kangaroo", "dolphin", "alligator"]
+    },
+    {
+        "id": "español-inicial-animales",
+        "language": "español",
+        "category": "Inicial",
+        "theme": "Animales",
+        "description": "",
+        "image": "",
+        "words": ["perro", "gato", "elefante", "jirafa", "león", "delfín"]
+    },
+    {
+        "id": "frances-inicial-animaux",
+        "language": "francés",
+        "category": "Inicial",
+        "theme": "Animaux",
+        "description": "",
+        "image": "",
+        "words": ["chien", "chat", "éléphant", "girafe", "lion", "dauphin"]
+    }
+]
