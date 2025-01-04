@@ -2,7 +2,9 @@ import styled, { css, keyframes } from 'styled-components';
 
 const gameOverAnimation = keyframes`
   0% { transform: rotate(0deg); }
+  25% { transform: rotate(-10deg); }
   50% { transform: rotate(10deg); }
+  75% { transform: rotate(-10deg); }
   100% { transform: rotate(0deg); }
 `;
 
@@ -17,7 +19,8 @@ export const AnimatedBodyPart = styled.line<{ visible: boolean; isGameOver: bool
     isGameOver &&
     css`
       stroke: red;
-      animation: ${gameOverAnimation} 0.5s infinite;
+      animation: ${gameOverAnimation} 1s infinite;
+      transform-origin: 150px 70px; 
     `}
 `;
 
@@ -32,7 +35,8 @@ export const AnimatedHead = styled.circle<{ visible: boolean; isGameOver: boolea
     isGameOver &&
     css`
       stroke: red;
-      animation: ${gameOverAnimation} 0.5s infinite;
+      animation: ${gameOverAnimation} 1s infinite;
+      transform-origin: 150px 70px;
     `}
 `;
 

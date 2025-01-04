@@ -19,6 +19,7 @@ const HangmanList = () => {
             description={game.description}
             onClick={() => navigate(`/${language}/ahorcado/${game.theme}`)}
             image={game.image ? `/images/hangman/${game.image}` : '/images/no-image.png'}
+            variant="round"
           />
         ))}
       </HangmanListGrid>

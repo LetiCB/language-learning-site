@@ -1,16 +1,20 @@
-import React from 'react';
+import React from "react";
 
-const WordDisplay: React.FC<{ word: string; guessedLetters: string[] }> = ({ word, guessedLetters }) => (
+type WordDisplayProps = {
+  word: string;
+  guessedLetters: string[];
+};
+
+const WordDisplay: React.FC<WordDisplayProps> = ({ word, guessedLetters }) => {
+  return (
     <p>
-      {word.split('').map((char, index) =>
-        /[^a-zA-Z]/.test(char)
-          ? char
-          : guessedLetters.includes(char.normalize('NFD').replace(/[\u0300-\u036f]/g, ''))
-          ? char
-          : '_'
+      {word.split("").map((letter, index) => 
+          guessedLetters.includes(letter.toLowerCase())
+            ? letter
+            : "_"
       ).join(' ')}
     </p>
   );
-  
+};
+
 export default WordDisplay;
-  

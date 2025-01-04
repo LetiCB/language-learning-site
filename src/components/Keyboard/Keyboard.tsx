@@ -3,7 +3,6 @@ import { KeyboardContainer, KeyButton } from './Keyboard.styles'
 
 interface KeyboardProps {
   letters: string[]
-  difficulty: 'easy' | 'hard'
   onLetterClick: (letter: string) => void
   correctLetters: string[]
   incorrectLetters: string[]
@@ -12,7 +11,6 @@ interface KeyboardProps {
 
 const Keyboard: React.FC<KeyboardProps> = ({
   letters,
-  difficulty,
   onLetterClick,
   correctLetters,
   incorrectLetters,
@@ -30,11 +28,6 @@ const Keyboard: React.FC<KeyboardProps> = ({
           isCorrect={isCorrect}
           isIncorrect={isIncorrect}
           disabled={disabled || isCorrect || isIncorrect}
-          title={
-            difficulty === 'easy' && /[áéíóúàèìòùâêîôûäëïöüçñ]/i.test(letter)
-              ? `Considerado igual a ${letter.normalize('NFD').replace(/[\u0300-\u036f]/g, '')}`
-              : undefined
-          }
         >
           {letter}
         </KeyButton>

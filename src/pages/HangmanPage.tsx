@@ -15,19 +15,22 @@ const HangmanPage = () => {
   const { theme } = useParams();
   const themeGame = hangmanGames.find((game) => game.theme === theme);
 
-  const [difficulty, setDifficulty] = useState<'easy' | 'hard'>('easy');
-  const maxAttempts = difficulty === 'easy' ? 10 : 6;
+  const [difficulty, setDifficulty] = useState<'easy' | 'intermediate' | 'hard'>('easy');
+  
+  const maxAttemptsMap = {
+    easy: 10,
+    intermediate: 8,
+    hard: 6,
+  };
+  
+  const maxAttempts = maxAttemptsMap[difficulty] || 10;
 
   const languageKeyboard = (language && keyboards[language as 'francés' | 'inglés']) || [];
 
-  const [randomWord, setRandomWord] = useState<string>(themeGame ? 
-    themeGame.words[Math.floor(Math.random() * themeGame.words.length)] : '');
-
   if (!themeGame) return <p>Ups... no encontramos el juego</p>
 
-  const handleChangeDifficulty = (newDifficulty: 'easy' | 'hard') => {
+  const handleChangeDifficulty = (newDifficulty: 'easy' | 'intermediate' | 'hard') => {
     setDifficulty(newDifficulty);
-    setRandomWord(themeGame.words[Math.floor(Math.random() * themeGame.words.length)]);
   };
 
   return (
@@ -47,6 +50,12 @@ const HangmanPage = () => {
             Fácil
           </button>
           <button
+            onClick={() => setDifficulty("intermediate")}
+            className={difficulty === "intermediate" ? "selected" : ""}
+          >
+            Intermedio
+          </button>
+          <button
             onClick={() => handleChangeDifficulty('hard')}
             className={difficulty === 'hard' ? 'selected' : ''}
           >
@@ -56,7 +65,7 @@ const HangmanPage = () => {
         <hr />
       </DifficultyContainer>
       <HangmanGame
-        word={randomWord}
+        words={themeGame.words}
         difficulty={difficulty}
         letters={languageKeyboard}
         maxAttempts={maxAttempts}
