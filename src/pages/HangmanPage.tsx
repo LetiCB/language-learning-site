@@ -15,8 +15,18 @@ const HangmanPage = () => {
   const { theme } = useParams();
   const themeGame = hangmanGames.find((game) => game.theme === theme);
 
+  let words: string[] = [];
+
+  if (theme === 'random') {
+      const filteredGames = hangmanGames.filter((game) => game.language === language);
+      
+      words = filteredGames.flatMap((game) => game.words);
+  } else {
+      words = themeGame?.words || [];
+  }
+
   const [difficulty, setDifficulty] = useState<'easy' | 'intermediate' | 'hard'>('easy');
-  
+
   const maxAttemptsMap = {
     easy: 10,
     intermediate: 8,
@@ -27,7 +37,7 @@ const HangmanPage = () => {
 
   const languageKeyboard = (language && keyboards[language as 'francés' | 'inglés']) || [];
 
-  if (!themeGame) return <p>Ups... no encontramos el juego</p>
+  if (!themeGame && theme !== 'random') return <p>Ups... no encontramos el juego</p>
 
   const handleChangeDifficulty = (newDifficulty: 'easy' | 'intermediate' | 'hard') => {
     setDifficulty(newDifficulty);
@@ -37,7 +47,7 @@ const HangmanPage = () => {
     <HangmanPageContainer>
       <TitleContainer>
         <h1>Juego de ahorcado</h1>
-        <h2>{themeGame.theme}</h2>
+        <h2>{themeGame?.theme}</h2>
       </TitleContainer>
       <DifficultyContainer>
         <hr />
@@ -65,7 +75,7 @@ const HangmanPage = () => {
         <hr />
       </DifficultyContainer>
       <HangmanGame
-        words={themeGame.words}
+        words={words}
         difficulty={difficulty}
         letters={languageKeyboard}
         maxAttempts={maxAttempts}

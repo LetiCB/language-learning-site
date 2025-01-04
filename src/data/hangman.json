@@ -207,5 +207,101 @@
             "football", "basketball", "tennis", "natation", "course", "volley", 
             "hockey", "cyclisme", "golf", "rugby", "danse", "yoga", "escalade"
         ]
-    } 
+    },
+    {
+        "id": "ingles-inicial-emotions",
+        "language": "inglés",
+        "category": "Inicial",
+        "theme": "Emotions",
+        "description": "",
+        "image": "emotions.png",
+        "words": [
+            "happiness", "sadness", "anger", "fear", "love", "joy", "surprise", "disgust", 
+            "pride", "shame"
+        ]
+    },
+    {
+        "id": "frances-inicial-emotions",
+        "language": "francés",
+        "category": "Inicial",
+        "theme": "Émotions",
+        "description": "",
+        "image": "emotions.png",
+        "words": [
+            "bonheur", "tristesse", "colère", "peur", "amour", "joie", "surprise", 
+            "dégoût", "fierté", "honte"
+        ]
+    },
+    {
+        "id": "ingles-inicial-weather-and-seasons",
+        "language": "inglés",
+        "category": "Inicial",
+        "theme": "Weather and Seasons",
+        "description": "",
+        "image": "weather-and-seasons.png",
+        "words": [
+            "sun", "rain", "snow", "wind", "cloud", "storm", "fog", "spring", "summer", 
+            "autumn", "winter"
+        ]
+    },
+    {
+        "id": "frances-inicial-temps-et-saisons",
+        "language": "francés",
+        "category": "Inicial",
+        "theme": "Temps et saisons",
+        "description": "",
+        "image": "weather-and-seasons.png",
+        "words": [
+            "soleil", "pluie", "neige", "vent", "nuage", "tempête", "brouillard", 
+            "printemps", "été", "automne", "hiver"
+        ]
+    },
+    {
+        "id": "ingles-inicial-transportation",
+        "language": "inglés",
+        "category": "Inicial",
+        "theme": "Transportation",
+        "description": "",
+        "image": "transportation.png",
+        "words": [
+            "car", "bus", "train", "airplane", "bicycle", "motorcycle", "boat", "subway", 
+            "helicopter", "taxi"
+        ]
+    },
+    {
+        "id": "frances-inicial-transports",
+        "language": "francés",
+        "category": "Inicial",
+        "theme": "Transports",
+        "description": "",
+        "image": "transportation.png",
+        "words": [
+            "voiture", "bus", "train", "avion", "vélo", "moto", "bateau", "métro", 
+            "hélicoptère", "taxi"
+        ]
+    },
+    {
+        "id": "ingles-inicial-food-and-drinks",
+        "language": "inglés",
+        "category": "Inicial",
+        "theme": "Food and Drinks",
+        "description": "",
+        "image": "food-and-drinks.png",
+        "words": [
+            "bread", "cheese", "apple", "chicken", "salad", "water", "wine", "coffee", 
+            "cake", "sandwich"
+        ]
+    },
+    {
+        "id": "frances-inicial-nourriture-et-boissons",
+        "language": "francés",
+        "category": "Inicial",
+        "theme": "Nourriture et boissons",
+        "description": "",
+        "image": "food-and-drinks.png",
+        "words": [
+            "pain", "fromage", "pomme", "poulet", "salade", "eau", "vin", "café", 
+            "gâteau", "sandwich"
+        ]
+    }
 ]

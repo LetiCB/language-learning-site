@@ -30,7 +30,7 @@ const LearnPage: React.FC = () => {
         <Card
           image={Hangman}
           title="Juegos de ahorcado"
-          onClick={() => navigate(`/${language}/ahoracado`)}
+          onClick={() => navigate(`/${language}/ahorcado`)}
           variant="round"
         />
       </LearnPageGrid>

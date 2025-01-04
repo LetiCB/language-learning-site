@@ -12,6 +12,14 @@ const HangmanList = () => {
     <HangmanListContainer>
       <h1>Juegos de ahoracado en {language}</h1>
       <HangmanListGrid>
+        <Card
+            key={'surprise'}
+            title={'Random'}
+            description={'Palabras de categorías al azar'}
+            onClick={() => navigate(`/${language}/ahorcado/random`)}
+            image={'/images/random.png'}
+            variant="round"
+        />
         {filteredGames.map(game => (
           <Card
             key={game.id}

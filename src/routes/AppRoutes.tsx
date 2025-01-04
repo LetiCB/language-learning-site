@@ -27,7 +27,7 @@ const AppRoutes: React.FC = () => {
 
         <Route path="/:language/juegos-de-arrastre/:title" element={<DragAndDropGame />} />
 
-        <Route path="/:language/ahoracado" element={<HangmanList />} />
+        <Route path="/:language/ahorcado" element={<HangmanList />} />
 
         <Route path="/:language/ahorcado/:theme" element={<HangmanPage />} />
 
