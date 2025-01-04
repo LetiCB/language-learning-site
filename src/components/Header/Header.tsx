@@ -15,7 +15,7 @@ const Header: React.FC<HeaderProps> = ({ children}) => {
     const handleLanguageChange = (language: string) => {
         setSelectedLanguage(language);
         const languagePath = language.toLowerCase();
-        navigate(`/learn/${languagePath}`);
+        navigate(`/${languagePath}`);
       };
 
     return (
