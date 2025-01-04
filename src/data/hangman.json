@@ -5,17 +5,8 @@
         "category": "Inicial",
         "theme": "Animals",
         "description": "",
-        "image": "",
+        "image": "animals.png",
         "words": ["elephant", "giraffe", "kangaroo", "dolphin", "alligator"]
-    },
-    {
-        "id": "español-inicial-animales",
-        "language": "español",
-        "category": "Inicial",
-        "theme": "Animales",
-        "description": "",
-        "image": "",
-        "words": ["perro", "gato", "elefante", "jirafa", "león", "delfín"]
     },
     {
         "id": "frances-inicial-animaux",
@@ -23,7 +14,198 @@
         "category": "Inicial",
         "theme": "Animaux",
         "description": "",
-        "image": "",
-        "words": ["chien", "chat", "éléphant", "girafe", "lion", "dauphin"]
-    }
+        "image": "animals.png",
+        "words": [
+            "chien", "chat", "éléphant", "girafe", "lion", "dauphin",
+            "souris", "cheval", "zèbre", "âne", "oiseau", "canard",
+            "vache", "cochon", "mouton", "poule", "lapin", "tigre",
+            "ours", "renard", "serpent", "crocodile", "hibou", "écureuil",
+            "léopard", "loup", "singe", "tortue", "crabe", "pieuvre",
+            "médaille", "poney", "panda", "baleine", "requin", "coq",
+            "chameau", "dromadaire", "moustique", "araignée", "abeille",
+            "perroquet", "faucon", "pingouin", "poulet", "escargot", "agneau",
+            "chevre", "castor", "panthère", "fourmi", "hamster", "mule",
+            "morse", "chinchilla", "grenouille", "iguane", "paon", "bison",
+            "pélican", "koala", "lama", "geai", "oie", "lémurien",
+            "hippopotame", "kangourou", "tapir", "tatou", "marmotte", "albatros",
+            "furet", "raton", "manchot", "mésange", "phoque", "martinet"
+          ]
+    },
+    {
+        "id": "frances-inicial-parties-du-corp",
+        "language": "francés",
+        "category": "Inicial",
+        "theme": "Parties du corp",
+        "description": "",
+        "image": "body-parts.png",
+        "words": [
+            "tête", "cheveux", "front", "yeux", "nez", "bouche", "oreilles", "dents", "langue", 
+            "cou", "épaules", "bras", "coudes", "mains", "doigts", "poitrine", "ventre", "dos", 
+            "hanches", "jambes", "genoux", "pieds", "orteils", "peau", "cœur", "poumons", 
+            "estomac", "os", "muscles"
+        ]
+    },
+    {
+        "id": "ingles-inicial-body-parts",
+        "language": "inglés",
+        "category": "Inicial",
+        "theme": "Body parts",
+        "description": "",
+        "image": "body-parts.png",
+        "words": [
+            "head", "hair", "forehead", "eyes", "nose", "mouth", "ears", "teeth", "tongue",
+            "neck", "shoulders", "arms", "elbows", "hands", "fingers", "chest", "stomach",
+            "back", "hips", "legs", "knees", "feet", "toes", "skin", "heart", "lungs",
+            "bones", "muscles"
+        ]
+    },
+    {
+        "id": "ingles-inicial-software-engineering",
+        "language": "inglés",
+        "category": "Inicial",
+        "theme": "Software engineering",
+        "description": "",
+        "image": "software-engineering.png",
+        "words": [
+            "algorithm", "debugging", "code", "repository", "commit", "branch", "merge", 
+            "pull", "push", "framework", "library", "frontend", "backend", "fullstack", 
+            "API", "database", "query", "server", "deployment", "scalability", "optimization", 
+            "refactor", "testing", "pipeline", "microservices", "cloud", "containerization", 
+            "virtualization", "integration", "versioning"
+        ]
+    },
+    {
+        "id": "frances-inicial-ingenierie-logicielle",
+        "language": "francés",
+        "category": "Inicial",
+        "theme": "Ingénierie logicielle",
+        "description": "",
+        "image": "software-engineering.png",
+        "words": [
+            "algorithme", "débogage", "code", "dépôt", "commit", "branche", "fusion", 
+            "pull", "push", "cadriciel", "bibliothèque", "frontend", "backend", "fullstack", 
+            "API", "base de données", "requête", "serveur", "déploiement", "scalabilité", 
+            "optimisation", "refactorisation", "tests", "pipeline", "microservices", 
+            "cloud", "containerisation", "virtualisation", "intégration", "versioning"
+        ]
+    },
+    {
+        "id": "ingles-inicial-christmas",
+        "language": "inglés",
+        "category": "Inicial",
+        "theme": "Christmas",
+        "description": "",
+        "image": "christmas.png",
+        "words": [
+            "christmas", "tree", "santa", "gift", "snowflake", "reindeer", "stocking", 
+            "ornament", "chimney", "wreath", "mistletoe"
+        ]
+    },
+    {
+        "id": "frances-inicial-noel",
+        "language": "francés",
+        "category": "Inicial",
+        "theme": "Noël",
+        "description": "",
+        "image": "christmas.png",
+        "words": [
+            "sapin", "noël", "cadeau", "neige", "renne", "chaussette", "cheminée", 
+            "couronne", "gui"
+        ]
+    },
+    {
+        "id": "ingles-inicial-summer-vacation",
+        "language": "inglés",
+        "category": "Inicial",
+        "theme": "Summer Vacation",
+        "description": "",
+        "image": "summer-vacation.png",
+        "words": [
+            "beach", "sunscreen", "swimsuit", "sandcastle", "umbrella", "surfboard", 
+            "icecream", "sunglasses", "ocean", "sand", "sea", "sun"
+        ]
+    },
+    {
+        "id": "frances-inicial-vacances-d-ete",
+        "language": "francés",
+        "category": "Inicial",
+        "theme": "Vacances d'été",
+        "description": "",
+        "image": "summer-vacation.png",
+        "words": [
+            "plage", "maillot", "château", "sable", "parapluie", 
+            "tongs", "surf", "glace", "lunettes", "soleil", "océan"
+        ]
+    },
+    {
+        "id": "ingles-inicial-office-work",
+        "language": "inglés",
+        "category": "Inicial",
+        "theme": "Office Work",
+        "description": "",
+        "image": "office-work.png",
+        "words": [
+            "computer", "desk", "chair", "meeting", "email", "deadline", "printer", 
+            "notebook", "keyboard", "mouse", "teams"
+        ]
+    },
+    {
+        "id": "frances-inicial-travail-de-bureau",
+        "language": "francés",
+        "category": "Inicial",
+        "theme": "Travail de bureau",
+        "description": "",
+        "image": "office-work.png",
+        "words": [
+            "ordinateur", "bureau", "chaise", "réunion", "email", "date limite", 
+            "imprimante", "cahier", "clavier", "souris"
+        ]
+    },
+    {
+        "id": "ingles-inicial-daily-routine",
+        "language": "inglés",
+        "category": "Inicial",
+        "theme": "Daily Routine",
+        "description": "",
+        "image": "daily-routine.png",
+        "words": [
+            "wake", "shower", "breakfast", "work", "lunch", "exercise", "dinner", 
+            "read", "watch TV", "sleep", "morning", "afternoon", "evening", "night"
+        ]
+    },
+    {
+        "id": "frances-inicial-routine-quotidienne",
+        "language": "francés",
+        "category": "Inicial",
+        "theme": "Routine quotidienne",
+        "description": "",
+        "image": "daily-routine.png",
+        "words": [
+            "douche", "travail", "déjeuner", "dîner", "lire", "dormir"
+        ]
+    },
+    {
+        "id": "ingles-inicial-sports",
+        "language": "inglés",
+        "category": "Inicial",
+        "theme": "Sports",
+        "description": "",
+        "image": "sports.png",
+        "words": [
+            "soccer", "basketball", "tennis", "swimming", "running", "volleyball", "hockey", 
+            "baseball", "cycling", "golf", "football", "rugby"
+        ]
+    },
+    {
+        "id": "frances-inicial-sports",
+        "language": "francés",
+        "category": "Inicial",
+        "theme": "Sports",
+        "description": "",
+        "image": "sports.png",
+        "words": [
+            "football", "basketball", "tennis", "natation", "course", "volley", 
+            "hockey", "cyclisme", "golf", "rugby", "danse", "yoga", "escalade"
+        ]
+    } 
 ]
