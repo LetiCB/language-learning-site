@@ -4,6 +4,7 @@ export const DraggableItemContainer = styled.div<{ isCorrect: boolean; categoryC
   padding: 0.625rem;
   flex: 1 1 auto;
   text-align: center;
+  align-content: center;
   border: 2px solid ${({ isCorrect }) => (isCorrect ? "#4caf50" : "#ccc")};
   border-radius: 5px;
   // background-color: ${({ isCorrect }) => (isCorrect ? "#e8f5e9" : "#fff")};
