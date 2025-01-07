@@ -1,8 +1,8 @@
 [
   {
-    "id": "sentimintos-friday-in-love-song",
+    "id": "sentimientos-friday-in-love-song",
     "language": "inglés",
-    "title": "Sentimientos",
+    "title": "Sentimientos en Friday I'm in Love",
     "description": "Ubica las expresiones en su correspondiente categoría",
     "image": "feelings-game.png",
     "categories": [
@@ -159,5 +159,648 @@
         "category": "negativo"
       }
     ]
-  }
+  },
+  {
+    "id": "weather-game",
+    "language": "inglés",
+    "title": "Weather Conditions",
+    "description": "Drag the weather expressions to their corresponding category",
+    "image": "weather-game.png",
+    "categories": [
+      {
+        "id": "good-weather",
+        "name": "Good Weather",
+        "type": "image",
+        "content": "good-weather.png"
+      },
+      {
+        "id": "bad-weather",
+        "name": "Bad Weather",
+        "type": "image",
+        "content": "bad-weather.png"
+      }
+    ],
+    "items": [
+      {
+        "id": "sunny-day",
+        "type": "word",
+        "content": "The sun is shining brightly today.",
+        "category": "good-weather"
+      },
+      {
+        "id": "clear-sky",
+        "type": "word",
+        "content": "The sky is clear and blue.",
+        "category": "good-weather"
+      },
+      {
+        "id": "light-breeze",
+        "type": "word",
+        "content": "There is a light breeze in the air.",
+        "category": "good-weather"
+      },
+      {
+        "id": "stormy-weather",
+        "type": "word",
+        "content": "It looks like a storm is coming.",
+        "category": "bad-weather"
+      },
+      {
+        "id": "pouring-rain",
+        "type": "word",
+        "content": "It’s pouring rain outside.",
+        "category": "bad-weather"
+      },
+      {
+        "id": "freezing-cold",
+        "type": "word",
+        "content": "The weather is freezing cold today.",
+        "category": "bad-weather"
+      },
+      {
+        "id": "perfect-weather",
+        "type": "word",
+        "content": "The weather is absolutely perfect today.",
+        "category": "good-weather"
+      },
+      {
+        "id": "warm-sun",
+        "type": "word",
+        "content": "I love feeling the warm sun on my face.",
+        "category": "good-weather"
+      },
+      {
+        "id": "rainy-day",
+        "type": "word",
+        "content": "It’s such a gloomy and rainy day.",
+        "category": "bad-weather"
+      },
+      {
+        "id": "thunderstorm",
+        "type": "word",
+        "content": "I can hear the thunder rumbling in the distance.",
+        "category": "bad-weather"
+      },
+      {
+        "id": "mild-breeze",
+        "type": "word",
+        "content": "There’s a mild breeze; it’s so refreshing.",
+        "category": "good-weather"
+      },
+      {
+        "id": "foggy-morning",
+        "type": "word",
+        "content": "The morning was cold and foggy.",
+        "category": "bad-weather"
+      },
+      {
+        "id": "snowfall",
+        "type": "word",
+        "content": "The first snowfall of the season is magical.",
+        "category": "good-weather"
+      },
+      {
+        "id": "too-hot",
+        "type": "word",
+        "content": "It’s unbearably hot outside today.",
+        "category": "bad-weather"
+      }      
+    ]
+  },
+  {
+    "id": "jeu-météo",
+    "language": "francés",
+    "title": "Conditions météorologiques",
+    "description": "Faites glisser les expressions météorologiques dans leur catégorie correspondante",
+    "image": "weather-game.png",
+    "categories": [
+      {
+        "id": "beau-temps",
+        "name": "Beau Temps",
+        "type": "image",
+        "content": "good-weather.png"
+      },
+      {
+        "id": "mauvais-temps",
+        "name": "Mauvais Temps",
+        "type": "image",
+        "content": "bad-weather.png"
+      }
+    ],
+    "items": [
+      {
+        "id": "jour-ensoleillé",
+        "type": "word",
+        "content": "Le soleil brille intensément aujourd'hui.",
+        "category": "beau-temps"
+      },
+      {
+        "id": "ciel-dégagé",
+        "type": "word",
+        "content": "Le ciel est dégagé et bleu.",
+        "category": "beau-temps"
+      },
+      {
+        "id": "légère-brise",
+        "type": "word",
+        "content": "Il y a une légère brise dans l'air.",
+        "category": "beau-temps"
+      },
+      {
+        "id": "temps-orageux",
+        "type": "word",
+        "content": "On dirait qu'un orage arrive.",
+        "category": "mauvais-temps"
+      },
+      {
+        "id": "pluie-torrentielle",
+        "type": "word",
+        "content": "Il pleut à torrents dehors.",
+        "category": "mauvais-temps"
+      },
+      {
+        "id": "froid-glacial",
+        "type": "word",
+        "content": "Le temps est glacial aujourd'hui.",
+        "category": "mauvais-temps"
+      },
+      {
+        "id": "temps-magnifique",
+        "type": "word",
+        "content": "Le temps est absolument magnifique aujourd'hui.",
+        "category": "beau-temps"
+      },
+      {
+        "id": "soleil-doux",
+        "type": "word",
+        "content": "J'adore sentir le doux soleil sur mon visage.",
+        "category": "beau-temps"
+      },
+      {
+        "id": "journée-pluvieuse",
+        "type": "word",
+        "content": "Quelle journée pluvieuse et sombre.",
+        "category": "mauvais-temps"
+      },
+      {
+        "id": "orage",
+        "type": "word",
+        "content": "On peut entendre le tonnerre gronder au loin.",
+        "category": "mauvais-temps"
+      },
+      {
+        "id": "vent-frais",
+        "type": "word",
+        "content": "Il y a un vent frais qui est très agréable.",
+        "category": "beau-temps"
+      },
+      {
+        "id": "matinée-brumeuse",
+        "type": "word",
+        "content": "La matinée était froide et brumeuse.",
+        "category": "mauvais-temps"
+      },
+      {
+        "id": "première-neige",
+        "type": "word",
+        "content": "La première neige de la saison est magique.",
+        "category": "beau-temps"
+      },
+      {
+        "id": "chaleur-insupportable",
+        "type": "word",
+        "content": "Il fait une chaleur insupportable aujourd'hui.",
+        "category": "mauvais-temps"
+      }      
+    ]
+  },
+  {
+    "id": "jeu-météo-deux",
+    "language": "francés",
+    "title": "Conditions météorologiques 2",
+    "description": "Faites glisser les expressions météorologiques dans leur catégorie correspondante.",
+    "image": "weather-game.png",
+    "categories": [
+      {
+        "id": "beau-temps",
+        "name": "Beau Temps",
+        "type": "image",
+        "content": "good-weather.png"
+      },
+      {
+        "id": "mauvais-temps",
+        "name": "Mauvais Temps",
+        "type": "image",
+        "content": "bad-weather.png"
+      }
+    ],
+    "items": [
+      {
+        "id": "legere-brise",
+        "type": "word",
+        "content": "Il y a une légère brise dans l'air.",
+        "category": "beau-temps"
+      },
+      {
+        "id": "soleil-brillant",
+        "type": "word",
+        "content": "Le soleil brille fort aujourd'hui.",
+        "category": "beau-temps"
+      },
+      {
+        "id": "ciel-bleu",
+        "type": "word",
+        "content": "Le ciel est bleu et sans nuages.",
+        "category": "beau-temps"
+      },
+      {
+        "id": "temps-parfait",
+        "type": "word",
+        "content": "C'est une journée parfaite pour une promenade.",
+        "category": "beau-temps"
+      },
+      {
+        "id": "tempete",
+        "type": "word",
+        "content": "Une tempête s'annonce sur la région.",
+        "category": "mauvais-temps"
+      },
+      {
+        "id": "pluie-torrentielle",
+        "type": "word",
+        "content": "Il pleut à torrents depuis ce matin.",
+        "category": "mauvais-temps"
+      },
+      {
+        "id": "orages",
+        "type": "word",
+        "content": "Des orages éclatent dans le sud.",
+        "category": "mauvais-temps"
+      },
+      {
+        "id": "nuages-lourds",
+        "type": "word",
+        "content": "Le ciel est couvert de lourds nuages gris.",
+        "category": "mauvais-temps"
+      },
+      {
+        "id": "vent-fort",
+        "type": "word",
+        "content": "Un vent fort souffle sur la côte.",
+        "category": "mauvais-temps"
+      },
+      {
+        "id": "journee-fraiche",
+        "type": "word",
+        "content": "Il fait frais mais agréable dehors.",
+        "category": "beau-temps"
+      },
+      {
+        "id": "neige-legere",
+        "type": "word",
+        "content": "Une légère neige tombe sur les montagnes.",
+        "category": "beau-temps"
+      },
+      {
+        "id": "gel",
+        "type": "word",
+        "content": "Le sol est gelé à cause du froid intense.",
+        "category": "mauvais-temps"
+      },
+      {
+        "id": "temps-maussade",
+        "type": "word",
+        "content": "Le temps est gris et maussade aujourd'hui.",
+        "category": "mauvais-temps"
+      },
+      {
+        "id": "arc-en-ciel",
+        "type": "word",
+        "content": "Un bel arc-en-ciel est apparu après la pluie.",
+        "category": "beau-temps"
+      },
+      {
+        "id": "douceur-printemps",
+        "type": "word",
+        "content": "L'air est doux et frais, typique du printemps.",
+        "category": "beau-temps"
+      },
+      {
+        "id": "averse-subite",
+        "type": "word",
+        "content": "Une averse subite a trempé tout le monde.",
+        "category": "mauvais-temps"
+      },
+      {
+        "id": "givre-sur-les-vitres",
+        "type": "word",
+        "content": "Il y a du givre sur les vitres ce matin.",
+        "category": "mauvais-temps"
+      },
+      {
+        "id": "journee-estivale",
+        "type": "word",
+        "content": "C'est une journée estivale avec un soleil éclatant.",
+        "category": "beau-temps"
+      },
+      {
+        "id": "tempete-de-neige",
+        "type": "word",
+        "content": "Une tempête de neige rend les routes impraticables.",
+        "category": "mauvais-temps"
+      }
+    ]
+  },  
+  {
+    "id": "transportation-categories",
+    "language": "inglés",
+    "title": "Means of Transportation",
+    "description": "Sort the transportation phrases into the correct category.",
+    "image": "transportation-game.png",
+    "categories": [
+      {
+        "id": "land",
+        "name": "Land",
+        "type": "image",
+        "content": "land-transportation.png"
+      },
+      {
+        "id": "water",
+        "name": "Water",
+        "type": "image",
+        "content": "water-transportation.png"
+      },
+      {
+        "id": "air",
+        "name": "Air",
+        "type": "image",
+        "content": "air-transportation.png"
+      }
+    ],
+    "items": [
+      {
+        "id": "ride-a-bike",
+        "type": "word",
+        "content": "Ride a bike",
+        "category": "land"
+      },
+      {
+        "id": "drive-a-car",
+        "type": "word",
+        "content": "Drive a car",
+        "category": "land"
+      },
+      {
+        "id": "take-a-train",
+        "type": "word",
+        "content": "Take a train",
+        "category": "land"
+      },
+      {
+        "id": "take-a-taxi",
+        "type": "word",
+        "content": "Take a taxi",
+        "category": "land"
+      },
+      {
+        "id": "take-the-bus",
+        "type": "word",
+        "content": "Take the bus",
+        "category": "land"
+      },
+      {
+        "id": "ride-a-motorcycle",
+        "type": "word",
+        "content": "Ride a motorcycle",
+        "category": "land"
+      },
+      {
+        "id": "sail-a-boat",
+        "type": "word",
+        "content": "Sail a boat",
+        "category": "water"
+      },
+      {
+        "id": "row-a-canoe",
+        "type": "word",
+        "content": "Row a canoe",
+        "category": "water"
+      },
+      {
+        "id": "steer-a-yacht",
+        "type": "word",
+        "content": "Steer a yacht",
+        "category": "water"
+      },
+      {
+        "id": "paddle-a-kayak",
+        "type": "word",
+        "content": "Paddle a kayak",
+        "category": "water"
+      },
+      {
+        "id": "fly-an-airplane",
+        "type": "word",
+        "content": "Fly an airplane",
+        "category": "air"
+      },
+      {
+        "id": "pilot-a-helicopter",
+        "type": "word",
+        "content": "Pilot a helicopter",
+        "category": "air"
+      },
+      {
+        "id": "board-a-glider",
+        "type": "word",
+        "content": "Board a glider",
+        "category": "air"
+      },
+      {
+        "id": "skydive-from-a-plane",
+        "type": "word",
+        "content": "Skydive from a plane",
+        "category": "air"
+      }
+    ]
+  },
+  {
+    "id": "moyens-de-transport",
+    "language": "francés",
+    "title": "Moyens de Transport",
+    "description": "Classe les phrases dans la catégorie appropriée.",
+    "image": "transportation-game.png",
+    "categories": [
+      {
+        "id": "terrestre",
+        "name": "Terrestre",
+        "type": "image",
+        "content": "land-transportation.png"
+      },
+      {
+        "id": "aquatique",
+        "name": "Aquatique",
+        "type": "image",
+        "content": "water-transportation.png"
+      },
+      {
+        "id": "aerien",
+        "name": "Aérien",
+        "type": "image",
+        "content": "air-transportation.png"
+      }
+    ],
+    "items": [
+      {
+        "id": "conduire-une-voiture",
+        "type": "word",
+        "content": "Conduire une voiture",
+        "category": "terrestre"
+      },
+      {
+        "id": "faire-du-velo",
+        "type": "word",
+        "content": "Faire du vélo",
+        "category": "terrestre"
+      },
+      {
+        "id": "prendre-le-train",
+        "type": "word",
+        "content": "Prendre le train",
+        "category": "terrestre"
+      },
+      {
+        "id": "piloter-une-moto",
+        "type": "word",
+        "content": "Piloter une moto",
+        "category": "terrestre"
+      },
+      {
+        "id": "naviguer-un-bateau",
+        "type": "word",
+        "content": "Naviguer un bateau",
+        "category": "aquatique"
+      },
+      {
+        "id": "ramer-une-canoe",
+        "type": "word",
+        "content": "Ramer une canoë",
+        "category": "aquatique"
+      },
+      {
+        "id": "manoeuvrer-un-yacht",
+        "type": "word",
+        "content": "Manœuvrer un yacht",
+        "category": "aquatique"
+      },
+      {
+        "id": "pagayer-un-kayak",
+        "type": "word",
+        "content": "Pagayer un kayak",
+        "category": "aquatique"
+      },
+      {
+        "id": "piloter-un-avion",
+        "type": "word",
+        "content": "Piloter un avion",
+        "category": "aerien"
+      },
+      {
+        "id": "conduire-un-helicoptere",
+        "type": "word",
+        "content": "Conduire un hélicoptère",
+        "category": "aerien"
+      },
+      {
+        "id": "monter-dans-un-planeur",
+        "type": "word",
+        "content": "Monter dans un planeur",
+        "category": "aerien"
+      },
+      {
+        "id": "sauter-en-parachute",
+        "type": "word",
+        "content": "Sauter en parachute",
+        "category": "aerien"
+      },
+      {
+        "id": "prendre-un-taxi",
+        "type": "word",
+        "content": "Prendre un taxi",
+        "category": "terrestre"
+      },
+      {
+        "id": "monter-dans-un-autobus",
+        "type": "word",
+        "content": "Monter dans un autobus",
+        "category": "terrestre"
+      },
+      {
+        "id": "conduire-un-camion",
+        "type": "word",
+        "content": "Conduire un camion",
+        "category": "terrestre"
+      },
+      {
+        "id": "faire-du-roller",
+        "type": "word",
+        "content": "Faire du roller",
+        "category": "terrestre"
+      },
+      {
+        "id": "se-deplacer-en-metro",
+        "type": "word",
+        "content": "Se déplacer en métro",
+        "category": "terrestre"
+      },
+      {
+        "id": "prendre-un-velo-en-libre-service",
+        "type": "word",
+        "content": "Prendre un vélo en libre-service",
+        "category": "terrestre"
+      },
+      {
+        "id": "conduire-un-bus",
+        "type": "word",
+        "content": "Conduire un bus",
+        "category": "terrestre"
+      },
+      {
+        "id": "faire-de-la-plongee-sous-marine",
+        "type": "word",
+        "content": "Faire de la plongée sous-marine",
+        "category": "aquatique"
+      },
+      {
+        "id": "prendre-un-ferry",
+        "type": "word",
+        "content": "Prendre un ferry",
+        "category": "aquatique"
+      },
+      {
+        "id": "naviguer-sur-un-catamaran",
+        "type": "word",
+        "content": "Naviguer sur un catamaran",
+        "category": "aquatique"
+      },
+      {
+        "id": "voyager-en-montgolfiere",
+        "type": "word",
+        "content": "Voyager en montgolfière",
+        "category": "aerien"
+      },
+      {
+        "id": "prendre-un-helicoptere",
+        "type": "word",
+        "content": "Prendre un hélicoptère",
+        "category": "aerien"
+      },
+      {
+        "id": "faire-un-vol-en-montgolfiere",
+        "type": "word",
+        "content": "Faire un vol en montgolfière",
+        "category": "aerien"
+      }
+    ]
+  }  
 ]

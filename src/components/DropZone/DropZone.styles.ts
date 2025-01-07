@@ -7,6 +7,7 @@ export const DropZoneContainer = styled.div<{ categoryColor: string }>`
   border-radius: 5px;
   min-height: 9rem;
   text-align: center;
+  align-content: center;
   background-color: #f7f7f7;
   transition: background-color 0.3s ease;
   

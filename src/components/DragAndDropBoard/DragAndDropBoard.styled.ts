@@ -15,7 +15,7 @@ export const BoardContainer = styled.div`
 `;
 
 export const CategoriesContainer = styled.div`
-  flex: 1;
+  flex: 3;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -27,7 +27,7 @@ export const CategoriesContainer = styled.div`
 `;
 
 export const ItemsContainer = styled.div`
-  flex: 1;
+  flex: 7;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
