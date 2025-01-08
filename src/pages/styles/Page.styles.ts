@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const SongPageContainer = styled.div`
+export const PageContainer = styled.div`
   margin-top: 0.2rem;
 `;
 
@@ -56,9 +56,14 @@ export const OptionsContainer = styled.div`
   }
 `;
 
+
+// SongPage Styles
 export const LyricsContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
 `;
+
+
+

@@ -2,13 +2,8 @@ import { useParams } from 'react-router-dom'
 import { useState } from 'react'
 import hangmanGames from '../data/hangman.json'
 import keyboards from '../data/keyboards.json';
-import {
-  DifficultyContainer,
-  HangmanPageContainer,
-  OptionsContainer,
-  TitleContainer,
-} from './HangmanPage.styles'
 import HangmanGame from 'src/components/HangmanGame/HangmanGame';
+import { DifficultyContainer, PageContainer, TitleContainer, OptionsContainer } from './styles/Page.styles';
 
 const HangmanPage = () => {
   const { language } = useParams<{ language: string }>();
@@ -44,7 +39,7 @@ const HangmanPage = () => {
   };
 
   return (
-    <HangmanPageContainer>
+    <PageContainer>
       <TitleContainer>
         <h1>Juego de ahorcado</h1>
         <h2>{themeGame?.theme}</h2>
@@ -80,7 +75,7 @@ const HangmanPage = () => {
         letters={languageKeyboard}
         maxAttempts={maxAttempts}
       />
-    </HangmanPageContainer>
+    </PageContainer>
   );
 };
 

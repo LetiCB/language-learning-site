@@ -1,7 +1,7 @@
 import { useNavigate, useParams } from 'react-router-dom';
 import hangmanGames from '../data/hangman.json';
 import Card from 'src/components/Card/Card';
-import { HangmanListContainer, HangmanListGrid } from './HangmanList.styles';
+import { ListContainer, ListGrid } from './styles/ListPage.styles';
 
 const HangmanList = () => {
   const navigate = useNavigate();
@@ -9,9 +9,9 @@ const HangmanList = () => {
   const filteredGames = hangmanGames.filter(game => game.language.toLowerCase() === language?.toLowerCase());
 
   return (
-    <HangmanListContainer>
+    <ListContainer>
       <h1>Juegos de ahoracado en {language}</h1>
-      <HangmanListGrid>
+      <ListGrid>
         <Card
             key={'surprise'}
             title={'Random'}
@@ -30,8 +30,8 @@ const HangmanList = () => {
             variant="round"
           />
         ))}
-      </HangmanListGrid>
-    </HangmanListContainer>
+      </ListGrid>
+    </ListContainer>
   );
 };
 

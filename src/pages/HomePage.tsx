@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import { HomeContainer, LanguageGrid } from "./HomePage.styles";
 import Card from "src/components/Card/Card";
 import { languages } from "src/data/languages";
 import { useLanguage } from "src/context/LanguageContext";
+import { ListContainer, ListGrid } from "./styles/ListPage.styles";
 
 const HomePage: React.FC = () => {
   const navigate = useNavigate();
@@ -20,9 +20,9 @@ const HomePage: React.FC = () => {
   };
 
   return (
-    <HomeContainer>
+    <ListContainer>
       <h1>Elige un idioma para comenzar</h1>
-      <LanguageGrid>
+      <ListGrid>
       {languages.map((language) => (
         <Card
           key={language.id}
@@ -34,8 +34,8 @@ const HomePage: React.FC = () => {
           variant="round"
         />
       ))}
-      </LanguageGrid>
-    </HomeContainer>
+      </ListGrid>
+    </ListContainer>
   );
 };
 

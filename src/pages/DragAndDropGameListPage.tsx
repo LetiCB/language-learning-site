@@ -2,7 +2,7 @@ import { useNavigate, useParams } from 'react-router-dom';
 import { useProgress } from 'src/context/ProgressContext';
 import games from "../data/drag-and-drop.json";
 import Card from 'src/components/Card/Card';
-import { GameContainer, GameListContainer } from './DragAndDropGameListPage.styles';
+import { ListContainer, ListGrid } from './styles/ListPage.styles';
 
 const DragAndDropGameList = () => {
     const navigate = useNavigate();
@@ -12,9 +12,9 @@ const DragAndDropGameList = () => {
     resetProgress();
 
     return (
-      <GameContainer>
+      <ListContainer>
         <h1>Juegos de arrastre en {language}</h1>
-        <GameListContainer>
+        <ListGrid>
           {filteredGames.map(game => (
             <Card
               key={game.id}
@@ -25,8 +25,8 @@ const DragAndDropGameList = () => {
               variant="round"
             />
           ))}
-        </GameListContainer>
-      </GameContainer>
+        </ListGrid>
+      </ListContainer>
     );
   };
   

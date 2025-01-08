@@ -1,12 +1,12 @@
 import { useParams } from 'react-router-dom';
 import games from "../data/drag-and-drop.json";
-import { GameContainer, TitleContainer } from './DragAndDropGame.styles';
 import DragAndDropBoard from 'src/components/DragAndDropBoard/DragAndDropBoard';
 import ProgressBar from 'src/components/ProgressBar/ProgressBar';
 import { useProgress } from 'src/context/ProgressContext';
 import { useEffect, useState } from 'react';
 import Modal from 'src/components/Modal/Modal';
 import AlertMessage from 'src/components/Alert/AlertMessage';
+import { PageContainer, TitleContainer } from './styles/Page.styles';
 
 type Item = {
   id: string;
@@ -72,7 +72,7 @@ const DragAndDropGamePage = () => {
   if (!game) return <p>Ups... no encontramos el juego</p>;
 
   return (
-      <GameContainer>
+      <PageContainer>
         <TitleContainer>
           <h1>{game.title}</h1>
           <p>{game.description}</p>
@@ -100,7 +100,7 @@ const DragAndDropGamePage = () => {
             onClose={closeModal}
           />
         )}
-      </GameContainer>
+      </PageContainer>
     );
 };
 

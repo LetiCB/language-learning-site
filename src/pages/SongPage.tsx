@@ -2,8 +2,8 @@ import { useParams } from 'react-router-dom';
 import { useState } from 'react';
 import songs from '../data/songs.json';
 import LyricsSection from 'src/components/LyricsSection/LyricsSection';
-import { DifficultyContainer, LyricsContainer, OptionsContainer, SongPageContainer, TitleContainer } from './SongPage.styles';
 import FloatingVideo from 'src/components/FloatingVideo/FloatingVideo';
+import { DifficultyContainer, LyricsContainer, OptionsContainer, PageContainer, TitleContainer } from './styles/Page.styles';
 
 const SongPage = () => {
     const { cancionesTitle } = useParams();
@@ -13,7 +13,7 @@ const SongPage = () => {
     if (!song) return <p>Ups... no encontramos la canción</p>;   
   
     return (
-      <SongPageContainer>
+      <PageContainer>
         <FloatingVideo videoId={song.url} />
         <TitleContainer>
           <h1>{song.title}</h1>
@@ -47,7 +47,7 @@ const SongPage = () => {
         <LyricsContainer>
           <LyricsSection song={song} difficulty={difficulty} />
         </LyricsContainer>
-      </SongPageContainer>
+      </PageContainer>
     );
   };
 
