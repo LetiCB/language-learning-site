@@ -10,6 +10,7 @@ import HomePage from "src/pages/HomePage";
 import LearnPage from "src/pages/LearnPage";
 import SongList from "src/pages/SongList";
 import SongPage from "src/pages/SongPage";
+import TriviaList from "src/pages/TriviaListPage";
 
 const AppRoutes: React.FC = () => {
   return (
@@ -30,6 +31,10 @@ const AppRoutes: React.FC = () => {
         <Route path="/:language/ahorcado" element={<HangmanList />} />
 
         <Route path="/:language/ahorcado/:theme" element={<HangmanPage />} />
+
+        <Route path="/:language/trivia" element={<TriviaList />} />
+
+        {/* <Route path="/:language/trivia/:theme" element={} /> */}
 
       </Routes>
     </DndProvider>
