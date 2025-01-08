@@ -1,0 +1,139 @@
+[
+    {
+        "id": "ingles-inicial-grammar-detective-right",
+        "language": "inglés",
+        "theme": "Detective gramatical",
+        "description": "Encuentra la opción correcta",
+        "image": "grammar-detective-right.png",
+        "questions": [
+            {
+                "question": "Tom and Peter _____ football players.",
+                "answers": ["are", "is", "be", "can"]
+            },
+            {
+                "question": "She _____ a doctor.",
+                "answers": ["is", "are", "am", "be"]
+            },
+            {
+                "question": "We _____ happy today.",
+                "answers": ["are", "is", "am", "can"]
+            },
+            {
+                "question": "I _____ a student.",
+                "answers": ["am", "is", "are", "be"]
+            },
+            {
+                "question": "The cat _____ on the sofa.",
+                "answers": ["is", "are", "be", "can"]
+            },
+            {
+                "question": "You _____ my best friend.",
+                "answers": ["are", "is", "be", "can"]
+            },
+            {
+                "question": "They _____ at school.",
+                "answers": ["are", "is", "am", "be"]
+            },
+            {
+                "question": "He _____ a good singer.",
+                "answers": ["is", "are", "am", "be"]
+            },
+            {
+                "question": "We _____ in the park.",
+                "answers": ["are", "is", "am", "be"]
+            },
+            {
+                "question": "Sophie _____ ten years old.",
+                "answers": ["is", "has", "have", "be"]
+            },
+            {
+                "question": "How old _____ you?",
+                "answers": ["are", "have", "has", "be"]
+            },
+            {
+                "question": "It _____ a sunny day.",
+                "answers": ["is", "are", "am", "be"]
+            },
+            {
+                "question": "I _____ a red car.",
+                "answers": ["have", "has", "had", "am"]
+            },
+            {
+                "question": "She _____ a beautiful house.",
+                "answers": ["has", "have", "had", "is"]
+            },
+            {
+                "question": "We _____ two dogs.",
+                "answers": ["have", "has", "had", "are"]
+            },
+            {
+                "question": "They _____ a big family.",
+                "answers": ["have", "has", "had", "is"]
+            },
+            {
+                "question": "He _____ a lot of friends.",
+                "answers": ["has", "have", "had", "is"]
+            },
+            {
+                "question": "You _____ a new job.",
+                "answers": ["have", "has", "had", "are"]
+            },
+            {
+                "question": "The cat _____ a long tail.",
+                "answers": ["has", "have", "had", "is"]
+            },
+            {
+                "question": "We _____ a meeting today.",
+                "answers": ["have", "has", "had", "are"]
+            },
+            {
+                "question": "She _____ a blue pen.",
+                "answers": ["has", "have", "had", "is"]
+            },
+            {
+                "question": "I _____ a great idea.",
+                "answers": ["have", "has", "had", "am"]
+            },
+            {
+                "question": "I _____ swim very fast.",
+                "answers": ["can", "could", "am", "is"]
+            },
+            {
+                "question": "She _____ play the piano.",
+                "answers": ["can", "could", "is", "has"]
+            },
+            {
+                "question": "We _____ speak English fluently.",
+                "answers": ["can", "could", "are", "have"]
+            },
+            {
+                "question": "He _____ run 5 kilometers.",
+                "answers": ["can", "is", "has", "am"]
+            },
+            {
+                "question": "They _____ dance very well.",
+                "answers": ["can", "is", "have", "are"]
+            },
+            {
+                "question": "You _____ ride a bike.",
+                "answers": ["can", "is", "am", "has"]
+            },
+            {
+                "question": "The dog _____ jump high.",
+                "answers": ["can", "is", "has", "are"]
+            },
+            {
+                "question": "We _____ help you with your homework.",
+                "answers": ["can", "are", "has", "could"]
+            },
+            {
+                "question": "She _____ sing beautifully.",
+                "answers": ["can", "is", "has", "are"]
+            },
+            {
+                "question": "I _____ hear the music.",
+                "answers": ["can", "is", "am", "has"]
+            }
+        ]
+    }
+]
