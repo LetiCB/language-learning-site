@@ -11,6 +11,7 @@ import LearnPage from "src/pages/LearnPage";
 import SongList from "src/pages/SongList";
 import SongPage from "src/pages/SongPage";
 import TriviaList from "src/pages/TriviaListPage";
+import TriviaPage from "src/pages/TriviaPage";
 
 const AppRoutes: React.FC = () => {
   return (
@@ -34,7 +35,7 @@ const AppRoutes: React.FC = () => {
 
         <Route path="/:language/trivia" element={<TriviaList />} />
 
-        {/* <Route path="/:language/trivia/:theme" element={} /> */}
+        <Route path="/:language/trivia/:theme" element={<TriviaPage />} />
 
       </Routes>
     </DndProvider>
