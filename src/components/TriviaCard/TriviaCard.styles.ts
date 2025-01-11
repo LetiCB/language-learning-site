@@ -72,7 +72,7 @@ export const ArrowButton = styled.button`
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color: #007bff;
+  background-color: #fbdada;
   color: white;
   border: none;
   cursor: pointer;
@@ -83,11 +83,22 @@ export const ArrowButton = styled.button`
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 
   &:hover {
-  background-color: #0056b3;
+  background-color: #f5b8b8;
   }
 
   &:focus {
   outline: none;
+  }
+
+  &:disabled {
+    background-color: #f2f2f2;
+    color: #cccccc;
+    cursor: not-allowed;
+    box-shadow: none;
+  }
+
+  &:disabled:hover {
+    background-color: #f2f2f2;
   }
 `;
 
