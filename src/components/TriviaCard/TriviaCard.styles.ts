@@ -12,7 +12,11 @@ export const DeckContainer = styled.div`
   margin: auto;
 `;
 
-export const Card = styled.div<{ isOffscreenLeft?: boolean; isOffscreenRight?: boolean; rotation: number }>`
+export const Card = styled.div<{ 
+    isOffscreenLeft?: boolean; 
+    isOffscreenRight?: boolean;
+    rotation?: number; 
+  }>`
   position: absolute;
   top: 0;
   left: 0;
@@ -24,9 +28,9 @@ export const Card = styled.div<{ isOffscreenLeft?: boolean; isOffscreenRight?: b
   transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
   transform: ${({ isOffscreenLeft, isOffscreenRight, rotation }) =>
     isOffscreenLeft
-      ? 'translate(-1000px, 0) rotateZ(-10deg)'
+      ? 'translate(-1000px, 0) rotateZ(-20deg)'
       : isOffscreenRight
-      ? 'translate(1000px, 0) rotateZ(15deg)'
+      ? 'translate(1000px, 0) rotateZ(30deg)'
       : `rotateZ(${rotation}deg)`};
   opacity: ${({ isOffscreenLeft, isOffscreenRight }) =>
     isOffscreenLeft || isOffscreenRight ? 0 : 1};
