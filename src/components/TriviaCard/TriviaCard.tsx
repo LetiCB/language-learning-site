@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
 import {
   Card,
-  CardHeader,
+  TriviaQuestion,
+  TriviaOptions,
   Container,
   DeckContainer,
   LeftArrow,
@@ -14,10 +15,11 @@ interface Questions {
 }
 
 interface TriviaProps {
-  questions: Questions[]
+  questions: Questions[],
+  difficulty: string;
 }
 
-const CardDeck: React.FC<TriviaProps> = ({ questions }) => {
+const CardDeck: React.FC<TriviaProps> = ({ questions, difficulty }) => {
   const [visibleCards, setVisibleCards] = useState<number[]>(() =>
     Array.from({ length: questions.length }, (_, i) => i),
   )
@@ -73,9 +75,14 @@ const CardDeck: React.FC<TriviaProps> = ({ questions }) => {
             isOffscreenRight={animationState[index] === 'isOffscreenRight'}
             rotation={getRandomRotation(order)}
           >
-            <CardHeader>
-              <h3>{questions[index].question}</h3>
-            </CardHeader>
+            <TriviaQuestion>
+              {questions[index].question}
+            </TriviaQuestion>
+            <TriviaOptions>
+                {questions[index].answers.map((answer) => (
+                    <button>{answer}</button>
+                ))}
+            </TriviaOptions>
           </Card>
         ))}
         <LeftArrow onClick={addNewCard} disabled={isLeftDisabled}>

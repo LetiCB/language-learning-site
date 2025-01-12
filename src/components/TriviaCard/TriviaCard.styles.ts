@@ -36,18 +36,24 @@ export const Card = styled.div<{
     isOffscreenLeft || isOffscreenRight ? 0 : 1};
 `;
 
-export const CardHeader = styled.header`
-  color: #333;
-  font-size: 1.5rem;
+export const TriviaQuestion = styled.header`
   padding: 1rem;
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  text-align: center;
+  color: #333;
 
   p {
     margin: 0;
   }
 `;
 
-export const CardBody = styled.div`
+export const TriviaOptions = styled.div`
   padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.6rem;
+  gap: 0.3rem;
 `;
 
 export const CardFooter = styled.footer`

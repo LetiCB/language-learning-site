@@ -7,6 +7,7 @@ import AlertMessage from 'src/components/Alert/AlertMessage';
 import trivias from '../data/trivia.json';
 import { DifficultyContainer, OptionsContainer, PageContainer, TitleContainer } from './styles/Page.styles';
 import TriviaCard from 'src/components/TriviaCard/TriviaCard';
+import Chronometer from 'src/components/Chronometer/Chronometer';
 
 type Question = {
     question: string;
@@ -103,7 +104,8 @@ const TriviaPage = () => {
                 gameData={{ ...trivia, questions: shuffledItems }} 
                 onAlert={showAlert} 
           */}
-          <TriviaCard questions={trivia.questions}/>
+          <TriviaCard questions={trivia.questions} difficulty={difficulty} />
+          <Chronometer isRunning={false} />
           {alert && (
             <AlertMessage
               message={alert.message}
