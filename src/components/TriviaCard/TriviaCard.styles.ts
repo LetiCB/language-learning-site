@@ -1,14 +1,9 @@
 import styled, { css, keyframes } from 'styled-components';
 
-export const Container = styled.div`
-  display: flex;
-  height: 500px;
-`;
-
 export const DeckContainer = styled.div`
   position: relative;
-  width: 300px;
-  height: 200px;
+  width: 400px;
+  height: 250px;
   margin: auto;
 `;
 

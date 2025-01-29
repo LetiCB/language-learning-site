@@ -3,7 +3,6 @@ import {
   Card,
   TriviaQuestion,
   TriviaOptions,
-  Container,
   DeckContainer,
   LeftArrow,
   RightArrow,
@@ -66,33 +65,31 @@ const CardDeck: React.FC<TriviaProps> = ({ questions, difficulty }) => {
   const isRightDisabled = visibleCards.length === 0
 
   return (
-    <Container>
-      <DeckContainer>
-        {visibleCards.map((index, order) => (
-          <Card
-            key={index}
-            isOffscreenLeft={animationState[index] === 'isOffscreenLeft'}
-            isOffscreenRight={animationState[index] === 'isOffscreenRight'}
-            rotation={getRandomRotation(order)}
-          >
-            <TriviaQuestion>
-              {questions[index].question}
-            </TriviaQuestion>
-            <TriviaOptions>
-                {questions[index].answers.map((answer) => (
-                    <button>{answer}</button>
-                ))}
-            </TriviaOptions>
-          </Card>
-        ))}
-        <LeftArrow onClick={addNewCard} disabled={isLeftDisabled}>
-          {'<'}
-        </LeftArrow>
-        <RightArrow onClick={removeTopCard} disabled={isRightDisabled}>
-          {'>'}
-        </RightArrow>
-      </DeckContainer>
-    </Container>
+    <DeckContainer>
+      {visibleCards.map((index, order) => (
+        <Card
+          key={index}
+          isOffscreenLeft={animationState[index] === 'isOffscreenLeft'}
+          isOffscreenRight={animationState[index] === 'isOffscreenRight'}
+          rotation={getRandomRotation(order)}
+        >
+          <TriviaQuestion>
+            {questions[index].question}
+          </TriviaQuestion>
+          <TriviaOptions>
+            {questions[index].answers.map((answer) => (
+              <button>{answer}</button>
+            ))}
+          </TriviaOptions>
+        </Card>
+      ))}
+      <LeftArrow onClick={addNewCard} disabled={isLeftDisabled}>
+        {'<'}
+      </LeftArrow>
+      <RightArrow onClick={removeTopCard} disabled={isRightDisabled}>
+        {'>'}
+      </RightArrow>
+    </DeckContainer>
   )
 }
 
