@@ -5,9 +5,10 @@ import ProgressBar from 'src/components/ProgressBar/ProgressBar';
 import Modal from 'src/components/Modal/Modal';
 import AlertMessage from 'src/components/Alert/AlertMessage';
 import trivias from '../data/trivia.json';
-import { DifficultyContainer, OptionsContainer, PageContainer, TitleContainer } from './styles/Page.styles';
+import { DifficultyContainer, OptionsContainer, PageContainer, ScoreContainer, TimerContainer, TimerScoreContainer, TitleContainer, TriviaBoardContainer, TriviaCardsContainer } from './styles/Page.styles';
 import TriviaCard from 'src/components/TriviaCard/TriviaCard';
 import Chronometer from 'src/components/Chronometer/Chronometer';
+import Scoreboard from 'src/components/Scoreboard/Scoreboard';
 
 type Question = {
     question: string;
@@ -99,13 +100,20 @@ const TriviaPage = () => {
               <hr />
           </DifficultyContainer>
           <ProgressBar correctItems={correctItems} totalItems={totalItems} />
-          {/* Aquí va el juego/board o como se llame :) 
-                Esto tengo de props en otro juego, sirve?
-                gameData={{ ...trivia, questions: shuffledItems }} 
-                onAlert={showAlert} 
-          */}
-          <TriviaCard questions={trivia.questions} difficulty={difficulty} />
-          <Chronometer isRunning={false} />
+          <TriviaBoardContainer>
+            <TriviaCardsContainer>
+              <TriviaCard questions={trivia.questions} difficulty={difficulty} />
+            </TriviaCardsContainer>
+            <TimerScoreContainer>
+              <ScoreContainer>
+                <Scoreboard score={50} />
+                <Scoreboard streak={2} />
+              </ScoreContainer>
+              <TimerContainer>
+                <Chronometer isRunning={true} direction={'down'} initialTime={30} />
+              </TimerContainer>              
+            </TimerScoreContainer>
+          </TriviaBoardContainer>
           {alert && (
             <AlertMessage
               message={alert.message}

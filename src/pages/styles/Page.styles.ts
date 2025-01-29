@@ -65,5 +65,31 @@ export const LyricsContainer = styled.div`
   min-height: 100vh;
 `;
 
+// TriviaPage Styles
+export const TriviaBoardContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+`;
 
+export const TriviaCardsContainer = styled.div`
+  display: flex;
+  flex: 0.7;
+`;
 
+export const TimerScoreContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 0.3;
+  gap: 2rem;
+`;
+
+export const TimerContainer = styled.div`
+  display: flex;
+`;
+
+export const ScoreContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  `;
