@@ -6,6 +6,7 @@ import { LearnPageContainer, LearnPageGrid } from "./LearnPage.styles";
 import Songs from "./../images/songs.png";
 import DragAndDrop from "./../images/drag-and-drop.png";
 import Hangman from "./../images/hangman.png";
+import RaceToFluency from "./../images/board-game.png";
 
 const LearnPage: React.FC = () => {
   const navigate = useNavigate();
@@ -31,6 +32,12 @@ const LearnPage: React.FC = () => {
           image={Hangman}
           title="Juegos de ahorcado"
           onClick={() => navigate(`/${language}/ahorcado`)}
+          variant="round"
+        />
+        <Card
+          image={RaceToFluency}
+          title="Carrera a la fluidez"
+          onClick={() => navigate(`/${language}/carrera-hacia-la-fluidez`)}
           variant="round"
         />
       </LearnPageGrid>
