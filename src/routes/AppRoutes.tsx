@@ -8,6 +8,8 @@ import HangmanList from "src/pages/HangmanList";
 import HangmanPage from "src/pages/HangmanPage";
 import HomePage from "src/pages/HomePage";
 import LearnPage from "src/pages/LearnPage";
+import RaceToFluencyGame from "src/pages/RaceToFluencyGame";
+import RaceToFluencyList from "src/pages/RaceToFluencyListPage";
 import SongList from "src/pages/SongList";
 import SongPage from "src/pages/SongPage";
 
@@ -30,6 +32,10 @@ const AppRoutes: React.FC = () => {
         <Route path="/:language/ahorcado" element={<HangmanList />} />
 
         <Route path="/:language/ahorcado/:theme" element={<HangmanPage />} />
+
+        <Route path="/:language/carrera-hacia-la-fluidez" element={<RaceToFluencyList />} />
+
+        <Route path="/:language/carrera-hacia-la-fluidez/:theme" element={<RaceToFluencyGame />} />
 
       </Routes>
     </DndProvider>
