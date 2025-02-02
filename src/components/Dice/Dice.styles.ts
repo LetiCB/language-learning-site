@@ -1,10 +1,13 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
+  padding: 1rem 0;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 2rem;
+  border-bottom: 1px solid #fbdada;
+  box-shadow: 0px 4px 6px rgb(195 181 181 / 10%);
 `;
 
 export const DiceContainer = styled.div`
