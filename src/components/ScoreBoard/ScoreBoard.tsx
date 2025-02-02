@@ -15,9 +15,10 @@ interface ScoreBoardProps {
 
 const ScoreBoard: React.FC<ScoreBoardProps> = ({ players }) => {
   const sortedPlayers = [...players].sort((a, b) => b.points - a.points);
+  const isMultiColumn = sortedPlayers.length > 3;
 
   return (
-    <BoardContainer>
+    <BoardContainer isMultiColumn={isMultiColumn}>
       {sortedPlayers.map((player) => (
         <PlayerRow key={player.id}>
           <PlayerIcon color={player.color} />
