@@ -5,8 +5,6 @@ export const BoardContainer = styled.div<{ isMultiColumn: boolean }>`
   background: #fff;
   padding: 1rem;
   text-align: left;
-  border-bottom: 1px solid #fbdada;
-  box-shadow: 0px 4px 6px rgb(195 181 181 / 10%);
   display: ${({ isMultiColumn }) => (isMultiColumn ? "grid" : "block")};
   grid-template-columns: ${({ isMultiColumn }) => (isMultiColumn ? "1fr 1fr" : "1fr")};
   gap: ${({ isMultiColumn }) => (isMultiColumn ? "0.5rem" : "0")};
