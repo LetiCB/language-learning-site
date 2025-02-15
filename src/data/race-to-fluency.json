@@ -1,0 +1,73 @@
+[
+  {   
+    "id": "demo",
+    "language": "inglés",
+    "theme": "demo",
+    "title": "Demo",
+    "description": "Responde las preguntas y avanza hasta ganar",
+    "image": "friendship.png",
+    "prompts": [
+      {
+        "id": "1",
+        "prompt": "Introduce yourself in English.",
+        "category": 1
+      },
+      {
+        "id": "2",
+        "prompt": "What did you do last weekend?",
+        "category": 1
+      },
+      {
+        "id": "3",
+        "prompt": "Describe your daily routine.",
+        "category": 1
+      },
+      {
+        "id": "4",
+        "prompt": "What is your favorite food? Why?",
+        "category": 1
+      },
+      {
+        "id": "5",
+        "prompt": "Talk about your last vacation.",
+        "category": 2
+      },
+      {
+        "id": "6",
+        "prompt": "Explain how to prepare your favorite dish.",
+        "category": 2
+      },
+      {
+        "id": "7",
+        "prompt": "If you could live anywhere, where would it be and why?",
+        "category": 2
+      },
+      {
+        "id": "8",
+        "prompt": "Tell a short story about a funny experience you had.",
+        "category": 2
+      },
+      {
+        "id": "9",
+        "prompt": "Debate: Is technology making life better or worse?",
+        "category": 3
+      },
+      {
+        "id": "10",
+        "prompt": "Explain a complex topic from your job in simple terms.",
+        "category": 3
+      },
+      {
+        "id": "11",
+        "prompt": "If you could invent something, what would it be and why?",
+        "category": 3
+      },
+      {
+        "id": "12",
+        "prompt": "What advice would you give to your younger self?",
+        "category": 3
+      }
+    ]
+  }
+]
+  

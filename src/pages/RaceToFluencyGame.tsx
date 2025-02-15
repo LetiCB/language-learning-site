@@ -1,6 +1,6 @@
-import { useParams } from 'react-router-dom'
-import { useState } from 'react'
-import raceToFluencyGames from '../data/race-to-fluency.json'
+import { useParams } from 'react-router-dom';
+import { useState } from 'react';
+import raceToFluencyGames from '../data/race-to-fluency.json';
 import RaceToFLuencyBoard from 'src/components/RaceToFluencyBoard/RaceToFluencyBoard';
 import Dice from 'src/components/Dice/Dice';
 import { BoardContainer, GameContainer, PageContainer, ScoreDiceContainer, TitleContainer } from './RaceToFluencyGame.styles';
@@ -9,12 +9,12 @@ import NotificationPanel from 'src/components/NotificationPanel/NotificationPane
 import ScoreBoard from 'src/components/ScoreBoard/ScoreBoard';
 
 const playersData = [
-  { id: "p1", name: "Alice", position: 0, color: "blue", points: 0 },
-  { id: "p2", name: "Bob", position: 0, color: "green", points: 0 },
-  { id: "p3", name: "Tom", position: 0, color: "pink", points: 0 },
-  { id: "p4", name: "Sally", position: 0, color: "red", points: 0 },
-  { id: "p5", name: "Annie", position: 0, color: "yellow", points: 0 },
-  { id: "p6", name: "Andy", position: 0, color: "orange", points: 0 }
+  { id: "p1", name: "Alice", position: 0, color: "blue", points: 0, finished: false },
+  { id: "p2", name: "Bob", position: 0, color: "green", points: 0, finished: false },
+  { id: "p3", name: "Tom", position: 0, color: "pink", points: 0, finished: false },
+  { id: "p4", name: "Sally", position: 0, color: "red", points: 0, finished: false },
+  { id: "p5", name: "Annie", position: 0, color: "yellow", points: 0, finished: false },
+  { id: "p6", name: "Andy", position: 0, color: "orange", points: 0, finished: false }
 ];
 
 const RaceToFluencyGame = () => {
@@ -25,30 +25,66 @@ const RaceToFluencyGame = () => {
   const [players, setPlayers] = useState(playersData);
   const [currentPlayerIndex, setCurrentPlayerIndex] = useState(0);
   const [gameOver, setGameOver] = useState(false);
-  const [winners, setWinners] = useState('');
+  const [winner, setWinner] = useState('');
+  const [promptText, setPromptText] = useState<string>('');
+  const [isDiceDisabled, setIsDiceDisabled] = useState(false);
 
-  if (!themeGame) return <p>Ups... no encontramos el juego</p>
+  if (!themeGame) return <p>Ups... no encontramos el juego</p>;
 
   const handlePlayerMove = (diceValue: number) => {
     setPlayers((prevPlayers) =>
       prevPlayers.map((player, index) => {
-        if (index === currentPlayerIndex) {
+        if (index === currentPlayerIndex && !player.finished) {
           const newPosition = player.position + diceValue;
-          if (newPosition > themeGame.prompts.length) {
-            setWinners(player.name);
-            setGameOver(true);
-          }
-          return { ...player, position: newPosition };
+          const isFinished = newPosition >= themeGame.prompts.length;
+
+          return { ...player, position: newPosition, finished: isFinished };
         }
         return player;
       })
     );
-    setCurrentPlayerIndex((prev) => (prev + 1) % players.length);
+
+    setPromptText(themeGame.prompts[players[currentPlayerIndex].position].prompt);
+    setIsDiceDisabled(true);
   };
 
-  const notification = gameOver ? `🎉 ${winners} ha ganado! 🎉` : `Es el turno de ${players[currentPlayerIndex].name}`
+  const handleAnswer = (isCorrect: boolean) => {
+    setPlayers((prevPlayers) =>
+      prevPlayers.map((player, index) => {
+        if (index === currentPlayerIndex) {
+          const newPoints = isCorrect ? player.points + 10 : player.points - 5;
+          return { ...player, points: newPoints };
+        }
+        return player;
+      })
+    );
 
-  return(
+    let nextPlayerIndex = currentPlayerIndex;
+    for (let i = 1; i < players.length; i++) {
+      const candidateIndex = (currentPlayerIndex + i) % players.length;
+      if (!players[candidateIndex].finished) {
+        nextPlayerIndex = candidateIndex;
+        break;
+      }
+    }
+    setCurrentPlayerIndex(nextPlayerIndex);
+
+    setPromptText('');
+    setIsDiceDisabled(false);
+
+    const allFinished = players.every(player => player.finished);
+    if (allFinished) {
+      setGameOver(true);
+      setWinner(players.reduce((best, player) => (player.points > best.points ? player : best), players[0]).name);
+    }
+  };
+
+  const notification = gameOver ? `🎉 ${winner} ha ganado! 🎉` : `Es el turno de ${players[currentPlayerIndex].name}`;
+
+  console.log('Players? ', players);
+  console.log('Prompt? ', promptText);
+  
+  return (
     <PageContainer>
       <TitleContainer>
         <h1>Carrera hacia la fluidez</h1>
@@ -60,16 +96,13 @@ const RaceToFluencyGame = () => {
         </BoardContainer>
         <ScoreDiceContainer>
           <NotificationPanel message={notification} />
-          <PromptPanel prompt={themeGame.prompts[0].prompt} />
-          <Dice
-            onRoll={handlePlayerMove}
-            disabled={gameOver}
-          />
+          <PromptPanel prompt={promptText} onAnswer={handleAnswer} />
+          <Dice onRoll={handlePlayerMove} disabled={isDiceDisabled || gameOver} />
           <ScoreBoard players={players} />
         </ScoreDiceContainer>
       </GameContainer>
     </PageContainer>
-  )
+  );
 };
 
 export default RaceToFluencyGame;
